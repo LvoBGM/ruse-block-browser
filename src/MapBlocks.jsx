@@ -25,8 +25,19 @@ export default function MapBlocks(){
       },
     });
 
+    const handleEachFeature = (feature, layer) => {
+        layer.on({
+            click: (event) => {
+                console.log(feature.properties);
+            }
+        });
+    };
 
     return(<>
-        {blockData && <GeoJSON data={blockData} style={blockStyle}/>}
+        {blockData && <GeoJSON 
+        data={blockData} 
+        style={blockStyle}
+        onEachFeature={handleEachFeature}
+        />}
     </>);
 }
