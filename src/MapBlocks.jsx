@@ -26,6 +26,9 @@ export default function MapBlocks(){
     });
 
     const handleEachFeature = (feature, layer) => {
+        // Bind poput to block
+        layer.bindPopup(`<strong>${feature.properties["blockname"]}</strong>`);
+
         layer.on({
             click: (event) => {
                 console.log(feature.properties);
