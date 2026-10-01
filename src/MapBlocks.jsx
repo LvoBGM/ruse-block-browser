@@ -1,9 +1,8 @@
 import { GeoJSON, useMapEvents } from 'react-leaflet';
 import { useState } from 'react';
-import blockData from './data/zdravec_iztok.json';
 
 
-export default function MapBlocks(){
+export default function MapBlocks({ blockData }){
     const [zoomLevel, setZoomLevel] = useState(0);
     const [blockStyle, setBlockStyle] = useState({
         color: "#ff7800",

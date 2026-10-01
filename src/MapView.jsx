@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, useMapEvents } from 'react-leaflet';
-
+import blockData from './data/zdravec_iztok.json';
 
 import MapBlocks from './MapBlocks';
 
@@ -16,7 +16,7 @@ export default function MapView() {
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com">CARTO</a>'
               />
 
-              <MapBlocks/>
+              <MapBlocks blockData={blockData}/>
           </MapContainer>
       </>
     );
