@@ -7,6 +7,8 @@ export default function SearchBar({ blockData }) {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
 
+    const map = useMap();
+
     const handleInputChange = (e) => {
         const value = e.target.value;
         setQuery(value);
@@ -26,7 +28,9 @@ export default function SearchBar({ blockData }) {
     };
 
     function onResultClick(feature) {
-        console.log("banans");
+        // Coordinates in features are stored reversed
+        const center = feature.geometry.coordinates[0][0];
+        map.panTo([center[1], center[0]], { animate: true, duration: 0.75 });
     }
 
     return (
