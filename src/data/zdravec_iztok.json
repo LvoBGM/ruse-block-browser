@@ -2564,7 +2564,7 @@
       "type": "Feature",
       "properties": {
         "id": 74,
-        "name": "бл.Ния"
+        "blockname": "бл.Ния"
       },
       "geometry": {
         "type": "Polygon",
