@@ -1,6 +1,7 @@
 import { GeoJSON, useMapEvents } from 'react-leaflet';
 import { useState } from 'react';
-import blockData from './data/zdravec_iztok.json';
+import blockData from './data/zdravec_nomera.json';
+//import blockData from './data/blocks.json';
 
 
 export default function MapBlocks(){
