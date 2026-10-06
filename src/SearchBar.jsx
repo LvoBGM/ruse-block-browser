@@ -3,7 +3,7 @@ import { useMap } from 'react-leaflet';
 import L from 'leaflet';
 import './searchBar.css';
 
-export default function SearchBar({ blockData }) {
+export default function SearchBar({ blockData, layersRef}) {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
 
@@ -28,9 +28,19 @@ export default function SearchBar({ blockData }) {
     };
 
     function onResultClick(feature) {
+
+        // Once panning animation has finished, put a popup on the block
+        map.once('moveend', () => {
+            const targetLayer = layersRef.current[feature["id"]];
+            if (targetLayer) {
+                targetLayer.openPopup();
+            }
+        });
+
         // Coordinates in features are stored reversed
         const center = feature.geometry.coordinates[0][0];
         map.panTo([center[1], center[0]], { animate: true, duration: 0.75 });
+
     }
 
     return (

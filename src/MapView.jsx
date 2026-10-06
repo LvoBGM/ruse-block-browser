@@ -1,4 +1,5 @@
 import { MapContainer, TileLayer, useMapEvents } from 'react-leaflet';
+import { useRef } from 'react';
 import blockData from './data/zdravec_iztok.json';
 import L from 'leaflet';
 import 'leaflet-edgebuffer'; 
@@ -18,6 +19,8 @@ const RUSE_BOUNDS = L.latLngBounds(
 const paddedRenderer = L.canvas({ padding: 1.0 });
 
 export default function MapView() {
+    // References to all layers (used by search bar to activate popups when searching for a block)
+    const layersRef = useRef({});
     return (
         <>
             <MapContainer
@@ -36,9 +39,9 @@ export default function MapView() {
                     edgeBufferTiles={3}
                 />
 
-                <SearchBar blockData={blockData}/>
+                <SearchBar blockData={blockData} layersRef={layersRef}/>
 
-                <MapBlocks blockData={blockData}/>
+                <MapBlocks blockData={blockData} layersRef={layersRef}/>
             </MapContainer>
         </>
     );

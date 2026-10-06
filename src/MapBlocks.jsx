@@ -2,7 +2,7 @@ import { GeoJSON, useMapEvents } from 'react-leaflet';
 import { useState } from 'react';
 
 
-export default function MapBlocks({ blockData }){
+export default function MapBlocks({ blockData, layersRef}){
     const [zoomLevel, setZoomLevel] = useState(0);
     const [blockStyle, setBlockStyle] = useState({
         color: "#ff7800",
@@ -23,7 +23,7 @@ export default function MapBlocks({ blockData }){
         }));
       },
     });
-
+    
     const handleEachFeature = (feature, layer) => {
         // Bind poput to block
         layer.bindPopup(`<strong>${feature.properties["blockname"]}</strong>`);
@@ -33,6 +33,11 @@ export default function MapBlocks({ blockData }){
                 console.log(feature.properties);
             }
         });
+
+        const blockId = feature["id"];
+        if (blockId) {
+            layersRef.current[blockId] = layer;
+        }
     };
 
     return(<>
