@@ -14,6 +14,9 @@ const RUSE_BOUNDS = L.latLngBounds(
   [43.9000, 26.0800]
 );
 
+// This just tells the map container to render poligons when you arent looking at them so that they dont disappear
+const paddedRenderer = L.canvas({ padding: 1.0 });
+
 export default function MapView() {
     return (
         <>
@@ -24,6 +27,7 @@ export default function MapView() {
                 minZoom={14}
                 maxBounds={RUSE_BOUNDS}
                 maxBoundsViscosity={1.0}
+                renderer={paddedRenderer}
             >
                 <TileLayer
                     url={`https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`}
