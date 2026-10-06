@@ -1,5 +1,7 @@
 import { MapContainer, TileLayer, useMapEvents } from 'react-leaflet';
 import blockData from './data/zdravec_iztok.json';
+import L from 'leaflet';
+import 'leaflet-edgebuffer'; 
 
 import MapBlocks from './MapBlocks';
 import SearchBar from './SearchBar';
@@ -26,6 +28,8 @@ export default function MapView() {
                 <TileLayer
                     url={`https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`}
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com">CARTO</a>'
+                    keepBuffer={15}
+                    edgeBufferTiles={3}
                 />
 
                 <SearchBar blockData={blockData}/>
