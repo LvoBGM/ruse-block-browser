@@ -38,8 +38,17 @@ export default function SearchBar({ blockData, layersRef}) {
         });
 
         // Coordinates in features are stored reversed
-        const center = feature.geometry.coordinates[0][0];
-        map.panTo([center[1], center[0]], { animate: true, duration: 0.75 });
+        const target = feature.geometry.coordinates[0][0];
+        const targetCoords = [target[1], target[0]];
+        const searchZoomLevel = 17;
+
+        // Calculate speed of animation
+        const distanceInKm = map.getCenter().distanceTo(targetCoords) / 1000;
+        let duration = 0.3 + (distanceInKm * 0.1); 
+        map.setView(targetCoords, searchZoomLevel, {
+            animate: true,
+            duration: duration
+        });
 
     }
 
