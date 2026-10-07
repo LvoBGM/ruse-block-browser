@@ -62,6 +62,18 @@ export default function SearchBar({ blockData, layersRef}) {
                 className="search-input"
             />
 
+            {query && (
+            <button
+                type="button"
+                onClick={() => {
+                    handleInputChange({ target: { value: '' } });
+                }}
+                className="search-clear-x"
+            >
+                &#x2715; {/* Unicode character for a clean mathematical multiplier/X */}
+            </button>
+            )}
+
             {results.length > 0 && (
                 <ul className="search-dropdown">
                     {results.map((feature, index) => (
