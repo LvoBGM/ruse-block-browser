@@ -26,7 +26,7 @@ export default function MapView() {
             <MapContainer
                 center={RUSE_CENTER}
                 zoom={ZOOM_LEVEL}
-                style={{ height: '100vh', width: '100vw' }}
+                style={{ height: '100vh', width: '100vw', background: '#000000' }} 
                 minZoom={14}
                 maxBounds={RUSE_BOUNDS}
                 maxBoundsViscosity={1.0}
