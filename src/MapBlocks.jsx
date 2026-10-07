@@ -4,7 +4,8 @@ import blockData from './data/zdravec_nomera.json';
 //import blockData from './data/blocks.json';
 
 
-export default function MapBlocks(){
+
+export default function MapBlocks({ blockData, layersRef}){
     const [zoomLevel, setZoomLevel] = useState(0);
     const [blockStyle, setBlockStyle] = useState({
         color: "#ff7800",
@@ -25,13 +26,21 @@ export default function MapBlocks(){
         }));
       },
     });
-
+    
     const handleEachFeature = (feature, layer) => {
+        // Bind poput to block
+        layer.bindPopup(`<strong>${feature.properties["blockname"]}</strong>`);
+
         layer.on({
             click: (event) => {
                 console.log(feature.properties);
             }
         });
+
+        const blockId = feature["id"];
+        if (blockId) {
+            layersRef.current[blockId] = layer;
+        }
     };
 
     return(<>
