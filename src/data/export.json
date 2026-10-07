@@ -7,8 +7,240 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 1,
-        "blockname": "Unnamed Block"
+        "@id": "relation/3458450",
+        "building": "commercial",
+        "name": "Търговски комплекс \"Олимп\"",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                25.9786913,
+                43.8512644
+              ],
+              [
+                25.9787618,
+                43.8509784
+              ],
+              [
+                25.9787759,
+                43.8509298
+              ],
+              [
+                25.9787415,
+                43.8509027
+              ],
+              [
+                25.9786944,
+                43.8509083
+              ],
+              [
+                25.9787132,
+                43.8508303
+              ],
+              [
+                25.9787838,
+                43.8507942
+              ],
+              [
+                25.9788543,
+                43.8508202
+              ],
+              [
+                25.9788966,
+                43.8508597
+              ],
+              [
+                25.9789076,
+                43.8509106
+              ],
+              [
+                25.9788151,
+                43.851244
+              ],
+              [
+                25.978765,
+                43.8512723
+              ],
+              [
+                25.9786913,
+                43.8512644
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.9785116,
+                43.850744
+              ],
+              [
+                25.9785287,
+                43.8506787
+              ],
+              [
+                25.978751,
+                43.8507088
+              ],
+              [
+                25.978734,
+                43.8507741
+              ],
+              [
+                25.9785116,
+                43.850744
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.9781836,
+                43.8507056
+              ],
+              [
+                25.9782022,
+                43.8506341
+              ],
+              [
+                25.978497,
+                43.850674
+              ],
+              [
+                25.9784784,
+                43.8507456
+              ],
+              [
+                25.978384,
+                43.8507328
+              ],
+              [
+                25.9783791,
+                43.8507514
+              ],
+              [
+                25.9782864,
+                43.8507389
+              ],
+              [
+                25.9782913,
+                43.8507202
+              ],
+              [
+                25.9781836,
+                43.8507056
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.9786703,
+                43.8509133
+              ],
+              [
+                25.9781471,
+                43.8508447
+              ],
+              [
+                25.9781729,
+                43.8507426
+              ],
+              [
+                25.978696,
+                43.8508111
+              ],
+              [
+                25.9786703,
+                43.8509133
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.9781548,
+                43.8507016
+              ],
+              [
+                25.9778803,
+                43.8506644
+              ],
+              [
+                25.9778346,
+                43.8506107
+              ],
+              [
+                25.9779021,
+                43.8505809
+              ],
+              [
+                25.9781765,
+                43.8506181
+              ],
+              [
+                25.9781548,
+                43.8507016
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.9781271,
+                43.8508415
+              ],
+              [
+                25.9777875,
+                43.8508003
+              ],
+              [
+                25.9778013,
+                43.8507536
+              ],
+              [
+                25.9778234,
+                43.8507568
+              ],
+              [
+                25.9778445,
+                43.8507328
+              ],
+              [
+                25.9778855,
+                43.8507272
+              ],
+              [
+                25.9778939,
+                43.8507044
+              ],
+              [
+                25.9781515,
+                43.8507368
+              ],
+              [
+                25.9781271,
+                43.8508415
+              ]
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3458450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/17919696",
+        "addr:city": "Русе",
+        "addr:housenumber": "2",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Еделвайс",
+        "building": "apartments",
+        "type": "multipolygon"
       },
       "geometry": {
         "type": "Polygon",
@@ -58,8 +290,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 2,
-        "blockname": "Unnamed Block"
+        "@id": "relation/17919704",
+        "addr:city": "Русе",
+        "addr:housenumber": "4",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Еделвайс",
+        "building": "apartments",
+        "type": "multipolygon"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -127,8 +364,15 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 3,
-        "blockname": "Unnamed Block"
+        "@id": "relation/20803983",
+        "addr:city": "Русе",
+        "addr:housenumber": "45",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "yes;apartments",
+        "building:levels": "3",
+        "roof:levels": "1",
+        "type": "multipolygon"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -196,8 +440,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 4,
-        "blockname": "Unnamed Block"
+        "@id": "way/115099488",
+        "addr:housenumber": "5",
+        "addr:street": "Околчица",
+        "building": "apartments",
+        "building:levels": "6",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -231,8 +479,189 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 5,
-        "blockname": "Комаров"
+        "@id": "way/115099489",
+        "building": "civic",
+        "building:levels": "2",
+        "leisure": "sports_centre",
+        "name": "спортен комплекс \"Дунав\"",
+        "sport": "basketball"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9777054,
+              43.8451599
+            ],
+            [
+              25.9777491,
+              43.8450566
+            ],
+            [
+              25.9776796,
+              43.8450385
+            ],
+            [
+              25.9776731,
+              43.8450527
+            ],
+            [
+              25.9776402,
+              43.8450449
+            ],
+            [
+              25.9773554,
+              43.8449764
+            ],
+            [
+              25.9773163,
+              43.844967
+            ],
+            [
+              25.9773225,
+              43.8449535
+            ],
+            [
+              25.9772467,
+              43.8449352
+            ],
+            [
+              25.9772814,
+              43.8448602
+            ],
+            [
+              25.9773522,
+              43.8448773
+            ],
+            [
+              25.9773585,
+              43.8448636
+            ],
+            [
+              25.9777265,
+              43.8449519
+            ],
+            [
+              25.9777202,
+              43.8449656
+            ],
+            [
+              25.9777823,
+              43.8449814
+            ],
+            [
+              25.9779143,
+              43.8447019
+            ],
+            [
+              25.9779416,
+              43.8447085
+            ],
+            [
+              25.9780182,
+              43.8445439
+            ],
+            [
+              25.9783323,
+              43.84462
+            ],
+            [
+              25.9782082,
+              43.8448866
+            ],
+            [
+              25.9782267,
+              43.8448911
+            ],
+            [
+              25.978109,
+              43.8451438
+            ],
+            [
+              25.9780603,
+              43.8452492
+            ],
+            [
+              25.9779857,
+              43.8452313
+            ],
+            [
+              25.9779633,
+              43.8452809
+            ],
+            [
+              25.9777583,
+              43.8452336
+            ],
+            [
+              25.9777826,
+              43.8451809
+            ],
+            [
+              25.9777054,
+              43.8451599
+            ]
+          ]
+        ]
+      },
+      "id": "way/115099489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/115099491",
+        "building": "school",
+        "building:levels": "3",
+        "name": "ОУ \"Тома Кърджиев\""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9786544,
+              43.8465429
+            ],
+            [
+              25.9787039,
+              43.8464316
+            ],
+            [
+              25.9796082,
+              43.8466411
+            ],
+            [
+              25.9797414,
+              43.8463421
+            ],
+            [
+              25.9799691,
+              43.8463949
+            ],
+            [
+              25.9797863,
+              43.8468052
+            ],
+            [
+              25.9786544,
+              43.8465429
+            ]
+          ]
+        ]
+      },
+      "id": "way/115099491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/175537929",
+        "addr:housename": "Комаров",
+        "addr:housenumber": "94",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "15"
       },
       "geometry": {
         "type": "Polygon",
@@ -266,8 +695,15 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 6,
-        "blockname": "Биковски"
+        "@id": "way/175538104",
+        "addr:city": "Русе",
+        "addr:housename": "Биковски",
+        "addr:housenumber": "96",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "15",
+        "name:ro": "bl.Bikovski"
       },
       "geometry": {
         "type": "Polygon",
@@ -301,8 +737,16 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 7,
-        "blockname": "бл.Николаев"
+        "@id": "way/175540661",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Николаев",
+        "addr:housenumber": "100",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "15",
+        "height": "15",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -340,8 +784,60 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 8,
-        "blockname": "бл.Терешкова"
+        "@id": "way/175540662",
+        "building": "retail",
+        "name": "Химическо чистене"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9808441,
+              43.8444948
+            ],
+            [
+              25.9809382,
+              43.8443291
+            ],
+            [
+              25.9813497,
+              43.8444148
+            ],
+            [
+              25.981391,
+              43.8443023
+            ],
+            [
+              25.9814789,
+              43.844351
+            ],
+            [
+              25.981363,
+              43.8446333
+            ],
+            [
+              25.9808441,
+              43.8444948
+            ]
+          ]
+        ]
+      },
+      "id": "way/175540662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/175540670",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Терешкова",
+        "addr:housenumber": "98",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "15",
+        "height": "15",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -379,8 +875,15 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 9,
-        "blockname": "бл.Титов"
+        "@id": "way/175540804",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Титов",
+        "addr:housenumber": "104",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "15",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -414,8 +917,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 10,
-        "blockname": "Unnamed Block"
+        "@id": "way/175540805",
+        "addr:city": "Русе",
+        "addr:housenumber": "73",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "6",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -449,8 +958,15 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 11,
-        "blockname": "бл.Попович"
+        "@id": "way/175540806",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Попович",
+        "addr:housenumber": "102",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "15",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -484,8 +1000,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 12,
-        "blockname": "Unnamed Block"
+        "@id": "way/175541657",
+        "addr:city": "Русе",
+        "addr:housenumber": "65",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "6",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -519,8 +1041,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 13,
-        "blockname": "Unnamed Block"
+        "@id": "way/175541659",
+        "addr:city": "Русе",
+        "addr:housenumber": "7",
+        "addr:postcode": "7005",
+        "addr:street": "Околчица",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -554,8 +1080,56 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 14,
-        "blockname": "бл.Марица"
+        "@id": "way/175541660",
+        "building": "commercial",
+        "building:levels": "1",
+        "name": "Пацони",
+        "name:en": "Paconi",
+        "name:ro": "Paconi",
+        "opening_hours": "Mo-Su 06:30-23:00",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9803395,
+              43.8468966
+            ],
+            [
+              25.9804838,
+              43.8465947
+            ],
+            [
+              25.980859,
+              43.8466879
+            ],
+            [
+              25.9807147,
+              43.8469899
+            ],
+            [
+              25.9803395,
+              43.8468966
+            ]
+          ]
+        ]
+      },
+      "id": "way/175541660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/175541661",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Марица",
+        "addr:housenumber": "92",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "8",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -621,8 +1195,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 15,
-        "blockname": "Unnamed Block"
+        "@id": "way/175541662",
+        "addr:city": "Русе",
+        "addr:housenumber": "36",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "6",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -656,8 +1236,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 16,
-        "blockname": "Unnamed Block"
+        "@id": "way/175541663",
+        "addr:city": "Русе",
+        "addr:housenumber": "13",
+        "addr:postcode": "7005",
+        "addr:street": "Околчица",
+        "building": "apartments",
+        "building:levels": "6",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -691,8 +1277,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 17,
-        "blockname": "Unnamed Block"
+        "@id": "way/175541666",
+        "addr:city": "Русе",
+        "addr:housenumber": "11",
+        "addr:postcode": "7005",
+        "addr:street": "Околчица",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -726,8 +1316,222 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 18,
-        "blockname": "Unnamed Block"
+        "@id": "way/212030620",
+        "addr:city": "Русе",
+        "addr:postcode": "7005",
+        "branch": "Здравец",
+        "brand": "Lidl",
+        "brand:wikidata": "Q108169047",
+        "building": "retail",
+        "name": "Lidl",
+        "name:bg": "Лидл",
+        "opening_hours": "Mo-Sa 07:30-21:30; Su 08:30-21:00",
+        "ref": "125",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9769142,
+              43.8466268
+            ],
+            [
+              25.9775922,
+              43.8462891
+            ],
+            [
+              25.9775989,
+              43.846296
+            ],
+            [
+              25.9776398,
+              43.8462753
+            ],
+            [
+              25.9776799,
+              43.8463166
+            ],
+            [
+              25.9776397,
+              43.8463369
+            ],
+            [
+              25.9777966,
+              43.8464982
+            ],
+            [
+              25.977492,
+              43.8466486
+            ],
+            [
+              25.9775231,
+              43.846683
+            ],
+            [
+              25.9771515,
+              43.846871
+            ],
+            [
+              25.9769342,
+              43.8466473
+            ],
+            [
+              25.9769142,
+              43.8466268
+            ]
+          ]
+        ]
+      },
+      "id": "way/212030620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/212030623",
+        "building": "manufacture",
+        "building:levels": "4",
+        "name": "Завод Найден Киров"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9745412,
+              43.848951
+            ],
+            [
+              25.9746205,
+              43.8488263
+            ],
+            [
+              25.9745597,
+              43.8488064
+            ],
+            [
+              25.9746096,
+              43.8487279
+            ],
+            [
+              25.9746462,
+              43.8487398
+            ],
+            [
+              25.9750015,
+              43.8481814
+            ],
+            [
+              25.9756662,
+              43.8484014
+            ],
+            [
+              25.9754071,
+              43.8488085
+            ],
+            [
+              25.9753598,
+              43.8487928
+            ],
+            [
+              25.9751816,
+              43.8490729
+            ],
+            [
+              25.9753038,
+              43.8491134
+            ],
+            [
+              25.9753338,
+              43.8490663
+            ],
+            [
+              25.9753169,
+              43.8490607
+            ],
+            [
+              25.9757262,
+              43.8484175
+            ],
+            [
+              25.9764261,
+              43.8486491
+            ],
+            [
+              25.9759855,
+              43.8493414
+            ],
+            [
+              25.9761003,
+              43.8493794
+            ],
+            [
+              25.976534,
+              43.8486978
+            ],
+            [
+              25.9768802,
+              43.8488124
+            ],
+            [
+              25.9763991,
+              43.8495685
+            ],
+            [
+              25.9760867,
+              43.8494651
+            ],
+            [
+              25.9760914,
+              43.8494577
+            ],
+            [
+              25.9759036,
+              43.8493955
+            ],
+            [
+              25.9758932,
+              43.849412
+            ],
+            [
+              25.9754333,
+              43.8492598
+            ],
+            [
+              25.9753198,
+              43.8494313
+            ],
+            [
+              25.9751344,
+              43.8493699
+            ],
+            [
+              25.9752694,
+              43.8491645
+            ],
+            [
+              25.9751434,
+              43.8491228
+            ],
+            [
+              25.9751289,
+              43.8491455
+            ],
+            [
+              25.9745412,
+              43.848951
+            ]
+          ]
+        ]
+      },
+      "id": "way/212030623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/212735346",
+        "building": "house"
       },
       "geometry": {
         "type": "Polygon",
@@ -761,8 +1565,8 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 19,
-        "blockname": "Unnamed Block"
+        "@id": "way/212735365",
+        "building": "roof"
       },
       "geometry": {
         "type": "Polygon",
@@ -804,8 +1608,8 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 20,
-        "blockname": "Unnamed Block"
+        "@id": "way/212735368",
+        "building": "garages"
       },
       "geometry": {
         "type": "Polygon",
@@ -843,8 +1647,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 21,
-        "blockname": "бл.Тича"
+        "@id": "way/243803032",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Тича",
+        "addr:housenumber": "88",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -894,8 +1703,70 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 22,
-        "blockname": "Unnamed Block"
+        "@id": "way/254933442",
+        "building": "industrial"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9841062,
+              43.8507315
+            ],
+            [
+              25.9840907,
+              43.850787
+            ],
+            [
+              25.9838544,
+              43.8507527
+            ],
+            [
+              25.9839231,
+              43.8505062
+            ],
+            [
+              25.9840714,
+              43.8505277
+            ],
+            [
+              25.984065,
+              43.8505504
+            ],
+            [
+              25.9846465,
+              43.8506347
+            ],
+            [
+              25.9846165,
+              43.8507423
+            ],
+            [
+              25.9840455,
+              43.8506596
+            ],
+            [
+              25.9840286,
+              43.8507203
+            ],
+            [
+              25.9841062,
+              43.8507315
+            ]
+          ]
+        ]
+      },
+      "id": "way/254933442"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/254933503",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 11",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -929,8 +1800,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 23,
-        "blockname": "Unnamed Block"
+        "@id": "way/254933514",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 23",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -964,8 +1838,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 24,
-        "blockname": "Unnamed Block"
+        "@id": "way/254933555",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 21",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -999,8 +1876,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 25,
-        "blockname": "Unnamed Block"
+        "@id": "way/254933558",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 22",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1034,8 +1914,55 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 26,
-        "blockname": "бл.Рупел"
+        "@id": "way/256923576",
+        "brand": "Ford; Volvo",
+        "building": "commercial",
+        "building:levels": "1",
+        "name": "Мото-Пфое",
+        "name:en": "Moto-Pfohe",
+        "operator": "Moto Pfohe",
+        "shop": "car"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9773069,
+              43.8507739
+            ],
+            [
+              25.9773629,
+              43.8505309
+            ],
+            [
+              25.9777363,
+              43.8505757
+            ],
+            [
+              25.9776803,
+              43.8508186
+            ],
+            [
+              25.9773069,
+              43.8507739
+            ]
+          ]
+        ]
+      },
+      "id": "way/256923576"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257625999",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Рупел",
+        "addr:housenumber": "2",
+        "addr:postcode": "7005",
+        "addr:street": "Рупел",
+        "building": "apartments",
+        "building:levels": "8"
       },
       "geometry": {
         "type": "Polygon",
@@ -1109,8 +2036,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 27,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631520",
+        "addr:city": "Русе",
+        "addr:housenumber": "32",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1144,8 +2076,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 28,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631521",
+        "addr:city": "Русе",
+        "addr:housenumber": "64",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -1179,8 +2116,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 29,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631522",
+        "addr:city": "Русе",
+        "addr:housenumber": "2",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Синчец",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1218,8 +2159,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 30,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631523",
+        "addr:city": "Русе",
+        "addr:housenumber": "1",
+        "addr:postcode": "7005",
+        "addr:street": "Сребърна",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1253,8 +2198,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 31,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631525",
+        "addr:city": "Русе",
+        "addr:housenumber": "22",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1288,8 +2238,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 32,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631529",
+        "addr:city": "Русе",
+        "addr:housenumber": "5",
+        "addr:postcode": "7005",
+        "addr:street": "Сребърна",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1323,8 +2277,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 33,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631533",
+        "addr:city": "Русе",
+        "addr:housenumber": "6",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Момина сълза",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -1358,8 +2317,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 34,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631534",
+        "addr:city": "Русе",
+        "addr:housenumber": "6",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Синчец",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1393,8 +2356,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 35,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631535",
+        "addr:city": "Русе",
+        "addr:housenumber": "6",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Горски теменуги",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1432,8 +2399,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 36,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631538",
+        "addr:city": "Русе",
+        "addr:housenumber": "5",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Момина сълза",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1467,8 +2439,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 37,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631541",
+        "addr:city": "Русе",
+        "addr:housenumber": "2",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Горски теменуги",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1502,8 +2478,49 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 38,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631543",
+        "building": "detached",
+        "building:levels": "2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9796151,
+              43.8477474
+            ],
+            [
+              25.9796559,
+              43.8476663
+            ],
+            [
+              25.9797769,
+              43.8476964
+            ],
+            [
+              25.9797362,
+              43.8477775
+            ],
+            [
+              25.9796151,
+              43.8477474
+            ]
+          ]
+        ]
+      },
+      "id": "way/257631543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257631545",
+        "addr:city": "Русе",
+        "addr:housenumber": "62",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -1537,8 +2554,54 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 39,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631548",
+        "building": "service",
+        "building:levels": "4",
+        "name": "Пощенски клон 7005"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9766393,
+              43.8498757
+            ],
+            [
+              25.9766502,
+              43.8498316
+            ],
+            [
+              25.9766918,
+              43.8496643
+            ],
+            [
+              25.9769403,
+              43.8496964
+            ],
+            [
+              25.9768996,
+              43.8498604
+            ],
+            [
+              25.9768878,
+              43.8499078
+            ],
+            [
+              25.9766393,
+              43.8498757
+            ]
+          ]
+        ]
+      },
+      "id": "way/257631548"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257631553",
+        "addr:housenumber": "бл. 58",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1572,8 +2635,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 40,
-        "blockname": "бл.Синцец"
+        "@id": "way/257631555",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Синцец",
+        "addr:housenumber": "4",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Синчец",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1607,8 +2675,15 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 41,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631558",
+        "addr:city": "Русе",
+        "addr:housenumber": "10",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "2",
+        "roof:levels": "1",
+        "roof:shape": "hipped"
       },
       "geometry": {
         "type": "Polygon",
@@ -1642,8 +2717,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 42,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631560",
+        "addr:city": "Русе",
+        "addr:housenumber": "11",
+        "addr:postcode": "7005",
+        "addr:street": "Сребърна",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1677,8 +2756,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 43,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631561",
+        "addr:city": "Русе",
+        "addr:housenumber": "60",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -1712,8 +2796,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 44,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631562",
+        "addr:city": "Русе",
+        "addr:housenumber": "1",
+        "addr:postcode": "7005",
+        "addr:street": "Байкал",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1747,8 +2836,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 45,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631563",
+        "addr:city": "Русе",
+        "addr:housenumber": "4",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Горски теменуги",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1782,8 +2875,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 46,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631564",
+        "addr:city": "Русе",
+        "addr:housenumber": "66",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1817,8 +2915,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 47,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631566",
+        "addr:city": "Русе",
+        "addr:housenumber": "7",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Момина сълза",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1852,8 +2955,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 48,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631569",
+        "addr:city": "Русе",
+        "addr:housenumber": "58",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -1887,8 +2995,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 49,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631570",
+        "addr:city": "Русе",
+        "addr:housenumber": "1",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Момина сълза",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1922,8 +3035,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 50,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631573",
+        "addr:city": "Русе",
+        "addr:housenumber": "8",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Горски теменуги",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -1957,8 +3074,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 51,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631579",
+        "addr:city": "Русе",
+        "addr:housenumber": "5",
+        "addr:postcode": "7005",
+        "addr:street": "Байкал",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -1992,8 +3114,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 52,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631581",
+        "addr:city": "Русе",
+        "addr:housenumber": "2",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Момина сълза",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -2027,8 +3154,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 53,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631582",
+        "addr:city": "Русе",
+        "addr:housenumber": "56",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -2062,8 +3194,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 54,
-        "blockname": "бл.Крали Марко"
+        "@id": "way/257631584",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Крали Марко",
+        "addr:housenumber": "70",
+        "addr:postcode": "7006",
+        "addr:street": "Згориград",
+        "building": "apartments",
+        "building:levels": "8"
       },
       "geometry": {
         "type": "Polygon",
@@ -2097,8 +3235,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 55,
-        "blockname": "бл.Ангел Гецов"
+        "@id": "way/257631586",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Ангел Гецов",
+        "addr:housenumber": "52",
+        "addr:postcode": "7005",
+        "addr:street": "бул. Липник",
+        "building": "apartments",
+        "building:levels": "8"
       },
       "geometry": {
         "type": "Polygon",
@@ -2132,8 +3276,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 56,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631587",
+        "addr:city": "Русе",
+        "addr:housenumber": "14",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -2167,8 +3316,49 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 57,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631589",
+        "building": "detached",
+        "building:levels": "2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9798105,
+              43.8474209
+            ],
+            [
+              25.9798622,
+              43.8473036
+            ],
+            [
+              25.9799938,
+              43.8473344
+            ],
+            [
+              25.9799421,
+              43.8474518
+            ],
+            [
+              25.9798105,
+              43.8474209
+            ]
+          ]
+        ]
+      },
+      "id": "way/257631589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257631594",
+        "addr:city": "Русе",
+        "addr:housenumber": "1",
+        "addr:postcode": "7005",
+        "addr:street": "Околчица",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -2202,8 +3392,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 58,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631597",
+        "addr:city": "Русе",
+        "addr:housenumber": "3",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Момина сълза",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -2237,8 +3432,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 59,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631598",
+        "addr:city": "Русе",
+        "addr:housenumber": "4",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Момина сълза",
+        "building": "apartments",
+        "building:levels": "4"
       },
       "geometry": {
         "type": "Polygon",
@@ -2272,8 +3472,50 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 60,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631599",
+        "building": "detached",
+        "building:levels": "2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9794502,
+              43.8474394
+            ],
+            [
+              25.9794845,
+              43.8473693
+            ],
+            [
+              25.9796327,
+              43.8474058
+            ],
+            [
+              25.9795985,
+              43.8474759
+            ],
+            [
+              25.9794502,
+              43.8474394
+            ]
+          ]
+        ]
+      },
+      "id": "way/257631599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257631608",
+        "addr:city": "Русе",
+        "addr:housenumber": "47",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "apartments",
+        "building:levels": "3",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -2323,8 +3565,15 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 61,
-        "blockname": "Unnamed Block"
+        "@id": "way/257631626",
+        "addr:city": "Русе",
+        "addr:housenumber": "53",
+        "addr:postcode": "7005",
+        "addr:street": "Чипровци",
+        "building": "apartments",
+        "building:levels": "3",
+        "roof:levels": "1",
+        "roof:shape": "hipped"
       },
       "geometry": {
         "type": "Polygon",
@@ -2374,8 +3623,286 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 62,
-        "blockname": "бл.Силистра"
+        "@id": "way/257631628",
+        "amenity": "fuel",
+        "brand": "Петрол",
+        "brand:en": "Petrol",
+        "brand:wikidata": "Q24315",
+        "building": "commercial",
+        "fuel:diesel": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Петрол",
+        "name:en": "Petrol"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9776372,
+              43.8472601
+            ],
+            [
+              25.9776029,
+              43.8472238
+            ],
+            [
+              25.9775434,
+              43.8472531
+            ],
+            [
+              25.9775175,
+              43.8472257
+            ],
+            [
+              25.9774971,
+              43.8472042
+            ],
+            [
+              25.9776984,
+              43.8471051
+            ],
+            [
+              25.9777456,
+              43.847155
+            ],
+            [
+              25.9776831,
+              43.8471857
+            ],
+            [
+              25.9776983,
+              43.8472018
+            ],
+            [
+              25.9777165,
+              43.8472211
+            ],
+            [
+              25.9776372,
+              43.8472601
+            ]
+          ]
+        ]
+      },
+      "id": "way/257631628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257631630",
+        "addr:housenumber": "54",
+        "addr:street": "бул. Липник",
+        "building": "commercial",
+        "building:levels": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9790135,
+              43.850204
+            ],
+            [
+              25.9784304,
+              43.8501349
+            ],
+            [
+              25.9784606,
+              43.8500163
+            ],
+            [
+              25.9787414,
+              43.850062
+            ],
+            [
+              25.9787598,
+              43.8499766
+            ],
+            [
+              25.9788604,
+              43.8499892
+            ],
+            [
+              25.978878,
+              43.8499094
+            ],
+            [
+              25.9790527,
+              43.8498387
+            ],
+            [
+              25.9790926,
+              43.8499178
+            ],
+            [
+              25.9790135,
+              43.850204
+            ]
+          ]
+        ]
+      },
+      "id": "way/257631630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257910804",
+        "amenity": "kindergarten",
+        "building": "school",
+        "name": "Детска ясла"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9777501,
+              43.8462835
+            ],
+            [
+              25.9778072,
+              43.8461509
+            ],
+            [
+              25.9778517,
+              43.8461609
+            ],
+            [
+              25.9779249,
+              43.845991
+            ],
+            [
+              25.977876,
+              43.8459801
+            ],
+            [
+              25.9779544,
+              43.8457981
+            ],
+            [
+              25.9781011,
+              43.845831
+            ],
+            [
+              25.978021,
+              43.8460167
+            ],
+            [
+              25.977971,
+              43.8460055
+            ],
+            [
+              25.977958,
+              43.8460357
+            ],
+            [
+              25.9781942,
+              43.8460886
+            ],
+            [
+              25.9781523,
+              43.8461859
+            ],
+            [
+              25.9779145,
+              43.8461326
+            ],
+            [
+              25.977897,
+              43.8461732
+            ],
+            [
+              25.9779503,
+              43.8461851
+            ],
+            [
+              25.977894,
+              43.8463157
+            ],
+            [
+              25.9777501,
+              43.8462835
+            ]
+          ]
+        ]
+      },
+      "id": "way/257910804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257910850",
+        "building": "civic",
+        "building:levels": "3",
+        "building:min_level": "2",
+        "building:part": "yes",
+        "leisure": "pitch",
+        "sport": "volleyball"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9777491,
+              43.8450566
+            ],
+            [
+              25.9777823,
+              43.8449814
+            ],
+            [
+              25.9779143,
+              43.8447019
+            ],
+            [
+              25.9779416,
+              43.8447085
+            ],
+            [
+              25.9780182,
+              43.8445439
+            ],
+            [
+              25.9783323,
+              43.84462
+            ],
+            [
+              25.9782082,
+              43.8448866
+            ],
+            [
+              25.9782267,
+              43.8448911
+            ],
+            [
+              25.978109,
+              43.8451438
+            ],
+            [
+              25.9777491,
+              43.8450566
+            ]
+          ]
+        ]
+      },
+      "id": "way/257910850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257910853",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Силистра",
+        "addr:housenumber": "90",
+        "addr:postcode": "7005",
+        "addr:street": "Петрохан",
+        "building": "apartments",
+        "building:levels": "8",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -2425,8 +3952,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 63,
-        "blockname": "Unnamed Block"
+        "@id": "way/257910860",
+        "building": "dormitory",
+        "building:levels": "4",
+        "building:min_level": "2",
+        "name": "Хотел \"Спортен комплекс Дунав\"",
+        "tourism": "hotel"
       },
       "geometry": {
         "type": "Polygon",
@@ -2500,8 +4031,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 64,
-        "blockname": "бл.Ангел Главчев"
+        "@id": "way/292449482",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Ангел Главчев",
+        "addr:housenumber": "62",
+        "addr:postcode": "7005",
+        "addr:street": "бул. Липник",
+        "building": "apartments",
+        "name:en": "Angel Glavchev"
       },
       "geometry": {
         "type": "Polygon",
@@ -2539,8 +4076,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 65,
-        "blockname": "Unnamed Block"
+        "@id": "way/308030650",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 12",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -2574,8 +4114,99 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 66,
-        "blockname": "Unnamed Block"
+        "@id": "way/354106212",
+        "building": "commercial"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9801291,
+              43.8498324
+            ],
+            [
+              25.9802623,
+              43.8498469
+            ],
+            [
+              25.9802544,
+              43.8498846
+            ],
+            [
+              25.9804571,
+              43.8499066
+            ],
+            [
+              25.9804506,
+              43.8499376
+            ],
+            [
+              25.9804833,
+              43.8499412
+            ],
+            [
+              25.9804724,
+              43.849993
+            ],
+            [
+              25.9805046,
+              43.8500085
+            ],
+            [
+              25.9804912,
+              43.8501129
+            ],
+            [
+              25.9804349,
+              43.8501342
+            ],
+            [
+              25.9805314,
+              43.8501671
+            ],
+            [
+              25.9805007,
+              43.8502748
+            ],
+            [
+              25.980399,
+              43.8502597
+            ],
+            [
+              25.9801499,
+              43.8502228
+            ],
+            [
+              25.9801398,
+              43.8502581
+            ],
+            [
+              25.9799923,
+              43.8502362
+            ],
+            [
+              25.9800969,
+              43.8498692
+            ],
+            [
+              25.9801291,
+              43.8498324
+            ]
+          ]
+        ]
+      },
+      "id": "way/354106212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/354112293",
+        "addr:city": "Русе",
+        "addr:housenumber": "1",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Еделвайс",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -2641,8 +4272,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 67,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145577",
+        "addr:city": "Русе",
+        "addr:housenumber": "14",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments",
+        "building:levels": "6",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -2676,8 +4313,15 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 68,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145578",
+        "addr:city": "Русе",
+        "addr:housenumber": "21",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "6",
+        "name": "79",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -2711,8 +4355,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 69,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145579",
+        "addr:city": "Русе",
+        "addr:housenumber": "23",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "6",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -2746,8 +4396,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 70,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145580",
+        "addr:city": "Русе",
+        "addr:housenumber": "25",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "6"
       },
       "geometry": {
         "type": "Polygon",
@@ -2781,8 +4436,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 71,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145581",
+        "addr:city": "Русе",
+        "addr:housenumber": "16",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments",
+        "building:levels": "6",
+        "roof:levels": "1"
       },
       "geometry": {
         "type": "Polygon",
@@ -2816,8 +4477,75 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 72,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145584",
+        "building": "government"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9814377,
+              43.84716
+            ],
+            [
+              25.9813233,
+              43.8471305
+            ],
+            [
+              25.9813994,
+              43.8469768
+            ],
+            [
+              25.9813525,
+              43.8469646
+            ],
+            [
+              25.9813864,
+              43.8468961
+            ],
+            [
+              25.9814297,
+              43.8469073
+            ],
+            [
+              25.981532,
+              43.8467009
+            ],
+            [
+              25.9816397,
+              43.8467287
+            ],
+            [
+              25.9815932,
+              43.8468225
+            ],
+            [
+              25.9816502,
+              43.8468372
+            ],
+            [
+              25.9815663,
+              43.8470065
+            ],
+            [
+              25.9815197,
+              43.8469945
+            ],
+            [
+              25.9814377,
+              43.84716
+            ]
+          ]
+        ]
+      },
+      "id": "way/366145584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366145585",
+        "building": "sports_hall"
       },
       "geometry": {
         "type": "Polygon",
@@ -2851,8 +4579,193 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 73,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145586",
+        "addr:housenumber": "36",
+        "addr:street": "Захари Стоянов",
+        "building": "kindergarten",
+        "building:levels": "2",
+        "roof:levels": "1",
+        "roof:shape": "flat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9806717,
+              43.8460581
+            ],
+            [
+              25.9807118,
+              43.8459687
+            ],
+            [
+              25.9809454,
+              43.8460234
+            ],
+            [
+              25.9809655,
+              43.8459786
+            ],
+            [
+              25.9812001,
+              43.8460335
+            ],
+            [
+              25.9811493,
+              43.8461464
+            ],
+            [
+              25.9809952,
+              43.8461104
+            ],
+            [
+              25.9809431,
+              43.8462262
+            ],
+            [
+              25.9808144,
+              43.8461961
+            ],
+            [
+              25.9808569,
+              43.8461014
+            ],
+            [
+              25.9806717,
+              43.8460581
+            ]
+          ]
+        ]
+      },
+      "id": "way/366145586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366145587",
+        "building": "kindergarten"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9806277,
+              43.8456494
+            ],
+            [
+              25.9806699,
+              43.8455488
+            ],
+            [
+              25.9808802,
+              43.8455947
+            ],
+            [
+              25.9808624,
+              43.8456372
+            ],
+            [
+              25.9811168,
+              43.8456928
+            ],
+            [
+              25.9810829,
+              43.8457735
+            ],
+            [
+              25.9808083,
+              43.8457135
+            ],
+            [
+              25.9808177,
+              43.8456909
+            ],
+            [
+              25.9806277,
+              43.8456494
+            ]
+          ]
+        ]
+      },
+      "id": "way/366145587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366145588",
+        "building": "kindergarten"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9815987,
+              43.84522
+            ],
+            [
+              25.9814018,
+              43.8451724
+            ],
+            [
+              25.9813566,
+              43.8452698
+            ],
+            [
+              25.981247,
+              43.8452433
+            ],
+            [
+              25.9812976,
+              43.8451345
+            ],
+            [
+              25.9810107,
+              43.8450652
+            ],
+            [
+              25.9810451,
+              43.844991
+            ],
+            [
+              25.9811576,
+              43.8450182
+            ],
+            [
+              25.9811717,
+              43.8449878
+            ],
+            [
+              25.9814113,
+              43.8450457
+            ],
+            [
+              25.9813924,
+              43.8450864
+            ],
+            [
+              25.9816337,
+              43.8451447
+            ],
+            [
+              25.9815987,
+              43.84522
+            ]
+          ]
+        ]
+      },
+      "id": "way/366145588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366145595",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 63",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -2886,8 +4799,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 74,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145596",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 65",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -2921,8 +4837,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 75,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145597",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 14",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -2956,8 +4875,13 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 76,
-        "blockname": "бл. Бели Брези"
+        "@id": "way/366145598",
+        "addr:city": "Русе",
+        "addr:housename": "бл. Бели Брези",
+        "addr:housenumber": "10",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Бели брези",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3023,8 +4947,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 77,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145599",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 13",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3062,8 +4989,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 78,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145602",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 18Б",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3097,8 +5027,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 79,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145603",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 18",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3132,8 +5065,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 80,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145604",
+        "addr:city": "Русе",
+        "addr:housenumber": "бл. 3",
+        "addr:postcode": "7005",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3167,8 +5103,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 81,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145606",
+        "addr:city": "Русе",
+        "addr:housenumber": "5",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "name": "бл. Гагарин",
+        "name:bg": "бл. Гагарин"
       },
       "geometry": {
         "type": "Polygon",
@@ -3202,8 +5144,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 82,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145608",
+        "addr:city": "Русе",
+        "addr:housenumber": "6",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Бели брези",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3237,8 +5183,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 83,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145610",
+        "addr:city": "Русе",
+        "addr:housenumber": "1",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3276,8 +5226,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 84,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145611",
+        "addr:city": "Русе",
+        "addr:housenumber": "1",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Бели хризантеми",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3311,8 +5265,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 85,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145612",
+        "addr:city": "Русе",
+        "addr:housenumber": "3",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3346,8 +5304,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 86,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145614",
+        "addr:city": "Русе",
+        "addr:housenumber": "3",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Бели хризантеми",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3381,8 +5343,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 87,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145615",
+        "addr:city": "Русе",
+        "addr:housenumber": "5",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Бели хризантеми",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3416,8 +5382,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 88,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145616",
+        "addr:city": "Русе",
+        "addr:housenumber": "5",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3459,8 +5429,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 89,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145617",
+        "addr:city": "Русе",
+        "addr:housenumber": "7",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3494,8 +5468,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 90,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145618",
+        "addr:city": "Русе",
+        "addr:housenumber": "7",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3533,8 +5511,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 91,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145619",
+        "addr:city": "Русе",
+        "addr:housenumber": "9",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3568,8 +5550,9 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 92,
-        "blockname": "бл. В-1"
+        "@id": "way/366145620",
+        "addr:housename": "бл. В-1",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3603,8 +5586,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 93,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145621",
+        "addr:city": "Русе",
+        "addr:housenumber": "11",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3654,8 +5641,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 94,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145622",
+        "addr:city": "Русе",
+        "addr:housenumber": "2",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3689,8 +5680,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 95,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145623",
+        "addr:city": "Русе",
+        "addr:housenumber": "6",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Еделвайс",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3740,8 +5735,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 96,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145624",
+        "addr:city": "Русе",
+        "addr:housenumber": "8",
+        "addr:postcode": "7005",
+        "addr:street": "Алея Еделвайс",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3775,8 +5774,12 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 97,
-        "blockname": "Unnamed Block"
+        "@id": "way/366145625",
+        "addr:city": "Русе",
+        "addr:housenumber": "4",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -3810,8 +5813,120 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 98,
-        "blockname": "Unnamed Block"
+        "@id": "way/366146432",
+        "building": "industrial"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9833283,
+              43.8506716
+            ],
+            [
+              25.9833462,
+              43.8505978
+            ],
+            [
+              25.9836165,
+              43.8506322
+            ],
+            [
+              25.9835987,
+              43.8507057
+            ],
+            [
+              25.9833283,
+              43.8506716
+            ]
+          ]
+        ]
+      },
+      "id": "way/366146432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366174988",
+        "building": "detached"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9772641,
+              43.8436462
+            ],
+            [
+              25.977305,
+              43.8435772
+            ],
+            [
+              25.9774307,
+              43.843616
+            ],
+            [
+              25.9773898,
+              43.843685
+            ],
+            [
+              25.9772641,
+              43.8436462
+            ]
+          ]
+        ]
+      },
+      "id": "way/366174988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366252112",
+        "building": "school"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9784921,
+              43.846209
+            ],
+            [
+              25.9785339,
+              43.8461126
+            ],
+            [
+              25.9788375,
+              43.8461811
+            ],
+            [
+              25.9787956,
+              43.8462775
+            ],
+            [
+              25.9784921,
+              43.846209
+            ]
+          ]
+        ]
+      },
+      "id": "way/366252112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366921141",
+        "addr:city": "Русе",
+        "addr:housenumber": "8",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments",
+        "building:levels": "2",
+        "roof:levels": "1",
+        "roof:shape": "hipped"
       },
       "geometry": {
         "type": "Polygon",
@@ -3853,8 +5968,62 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 99,
-        "blockname": "Unnamed Block"
+        "@id": "way/456116159",
+        "addr:city": "Русе",
+        "amenity": "fuel",
+        "brand": "EKO",
+        "brand:wikidata": "Q111603199",
+        "building": "retail",
+        "fuel:adblue": "yes",
+        "fuel:autogas": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_100": "yes",
+        "fuel:octane_95": "yes",
+        "name": "ЕКО",
+        "name:bg": "ЕКО",
+        "name:en": "EKO"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9816976,
+              43.8430754
+            ],
+            [
+              25.9816311,
+              43.8431611
+            ],
+            [
+              25.9815386,
+              43.8431238
+            ],
+            [
+              25.9816052,
+              43.8430381
+            ],
+            [
+              25.9816976,
+              43.8430754
+            ]
+          ]
+        ]
+      },
+      "id": "way/456116159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/475648476",
+        "addr:city": "Русе",
+        "addr:housenumber": "13",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments",
+        "building:levels": "4",
+        "roof:levels": "1",
+        "roof:shape": "gabled"
       },
       "geometry": {
         "type": "Polygon",
@@ -3888,8 +6057,15 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 100,
-        "blockname": "Unnamed Block"
+        "@id": "way/475648478",
+        "addr:city": "Русе",
+        "addr:housenumber": "17",
+        "addr:postcode": "7005",
+        "addr:street": "Юндола",
+        "building": "apartments",
+        "building:levels": "4",
+        "roof:levels": "1",
+        "roof:shape": "gabled"
       },
       "geometry": {
         "type": "Polygon",
@@ -3923,8 +6099,51 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 101,
-        "blockname": "бл.Пощенец"
+        "@id": "way/475673272",
+        "building": "retail",
+        "name": "Шивашко ателие",
+        "shop": "sewing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9767384,
+              43.843643
+            ],
+            [
+              25.9767945,
+              43.8436598
+            ],
+            [
+              25.9767739,
+              43.8436954
+            ],
+            [
+              25.9767178,
+              43.8436786
+            ],
+            [
+              25.9767384,
+              43.843643
+            ]
+          ]
+        ]
+      },
+      "id": "way/475673272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/475684998",
+        "addr:city": "Русе",
+        "addr:housename": "бл.Пощенец",
+        "addr:housenumber": "50",
+        "addr:postcode": "7005",
+        "addr:street": "бул. Липник",
+        "building": "apartments",
+        "building:levels": "3"
       },
       "geometry": {
         "type": "Polygon",
@@ -3958,8 +6177,84 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 102,
-        "blockname": "Unnamed Block"
+        "@id": "way/839434106",
+        "building": "service"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9765969,
+              43.8436522
+            ],
+            [
+              25.976658,
+              43.8436711
+            ],
+            [
+              25.9766439,
+              43.8436952
+            ],
+            [
+              25.9765827,
+              43.8436765
+            ],
+            [
+              25.9765969,
+              43.8436522
+            ]
+          ]
+        ]
+      },
+      "id": "way/839434106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1313193801",
+        "building": "retail",
+        "name": "Hairdressing salon ET \"Ruchi\"",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9766843,
+              43.8436264
+            ],
+            [
+              25.9767384,
+              43.843643
+            ],
+            [
+              25.9767178,
+              43.8436786
+            ],
+            [
+              25.9766633,
+              43.8436623
+            ],
+            [
+              25.9766843,
+              43.8436264
+            ]
+          ]
+        ]
+      },
+      "id": "way/1313193801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1525471639",
+        "addr:city": "Русе",
+        "addr:housenumber": "4",
+        "addr:postcode": "7005",
+        "addr:street": "Захари Стоянов",
+        "building": "apartments"
       },
       "geometry": {
         "type": "Polygon",
@@ -4005,6 +6300,122 @@
         ]
       },
       "id": "way/1525471639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257626036",
+        "building": "commercial",
+        "building:levels": "1",
+        "shop": "yes",
+        "@relations": [
+          {
+            "role": "outer",
+            "rel": 3458450,
+            "reltags": {
+              "building": "commercial",
+              "name": "Търговски комплекс \"Олимп\"",
+              "type": "multipolygon"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9781548,
+              43.8507016
+            ],
+            [
+              25.9778803,
+              43.8506644
+            ],
+            [
+              25.9778346,
+              43.8506107
+            ],
+            [
+              25.9779021,
+              43.8505809
+            ],
+            [
+              25.9781765,
+              43.8506181
+            ],
+            [
+              25.9781548,
+              43.8507016
+            ]
+          ]
+        ]
+      },
+      "id": "way/257626036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/257626038",
+        "building": "commercial",
+        "building:levels": "1",
+        "shop": "yes",
+        "@relations": [
+          {
+            "role": "outer",
+            "rel": 3458450,
+            "reltags": {
+              "building": "commercial",
+              "name": "Търговски комплекс \"Олимп\"",
+              "type": "multipolygon"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9781836,
+              43.8507056
+            ],
+            [
+              25.9782022,
+              43.8506341
+            ],
+            [
+              25.978497,
+              43.850674
+            ],
+            [
+              25.9784784,
+              43.8507456
+            ],
+            [
+              25.978384,
+              43.8507328
+            ],
+            [
+              25.9783791,
+              43.8507514
+            ],
+            [
+              25.9782864,
+              43.8507389
+            ],
+            [
+              25.9782913,
+              43.8507202
+            ],
+            [
+              25.9781836,
+              43.8507056
+            ]
+          ]
+        ]
+      },
+      "id": "way/257626038"
     }
   ]
 }

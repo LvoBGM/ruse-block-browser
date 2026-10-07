@@ -1,7 +1,15 @@
 import fs from 'fs';
-//const rawData = JSON.parse(fs.readFileSync('./backup_blocks.json', 'utf8'));
-const rawData = JSON.parse(fs.readFileSync('./zdravec_iztok.json', 'utf8'));
-const excludedBuildings = ['school', 'kindergarten', 'retail', 'industrial', 'civic', 'government', 'hospital', 'university', 'commercial', 'office'];
+
+// Get the filename from the command line arguments
+const inputFilename = process.argv[2];
+
+if (!inputFilename) {
+  console.error("Error: Please provide an input file name. Example: node script.js your_file.json");
+  process.exit(1);
+}
+
+const rawData = JSON.parse(fs.readFileSync(inputFilename, 'utf8'));
+const excludedBuildings = ['school', 'service', 'detached', 'manufacture', 'kindergarten', 'church', 'retail', 'industrial', 'civic', 'government', 'hospital', 'university', 'commercial', 'office'];
 
 let id = 0;
 
