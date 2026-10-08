@@ -1,11 +1,24 @@
 import { MapContainer, TileLayer, useMapEvents } from 'react-leaflet';
 import { useRef } from 'react';
-import blockData from './data/zdravec_iztok.json';
 import L from 'leaflet';
 import 'leaflet-edgebuffer'; 
 
 import MapBlocks from './MapBlocks';
 import SearchBar from './SearchBar';
+
+// Import data
+import zdravec_imena from './data/zdravec_imena.json';
+import zdravec_nomera from './data/zdravec_nomera.json';
+import zdravec_iztok from './data/zdravec_iztok.json';
+
+const blockData = {
+  type: "FeatureCollection",
+  features: [
+    ...zdravec_imena.features,
+    ...zdravec_iztok.features,
+    ...zdravec_nomera.features
+  ]
+};
 
 const RUSE_CENTER = [43.8456, 25.9558]; // Coordinates of Ruse Centre
 const ZOOM_LEVEL = 14;
