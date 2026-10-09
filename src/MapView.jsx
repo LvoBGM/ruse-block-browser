@@ -56,27 +56,25 @@ export default function MapView() {
 
                 <SearchBar blockData={blockData} layersRef={layersRef}/>
 
-                {/* 1. The Quiz Toggle Button */}
-                {!isQuizMenuOpen && (
-                    <button
-                    className='quiz-btn'
-                        onClick={() => {
-                            console.log('[UI] Floating "Quiz" button clicked');
-                            setIsQuizMenuOpen(true);
-                        }}
-                    >
-                        Започни Quiz
-                    </button>
-                )}
-    
-                {/* 2. The Quiz Sidebar Menu */}
-                <QuizSidebar
-                    isOpen={isQuizMenuOpen}
-                    onClose={() => setIsQuizMenuOpen(false)}
-                />
-
                 <MapBlocks blockData={blockData} layersRef={layersRef}/>
             </MapContainer>
+            {!isQuizMenuOpen && (
+                <button
+                className='quiz-btn'
+                    onClick={() => {
+                        console.log('[UI] Floating "Quiz" button clicked');
+                        setIsQuizMenuOpen(true);
+                    }}
+                >
+                    Започни Quiz
+                </button>
+            )}
+
+            {/* 2. The Quiz Sidebar Menu */}
+            <QuizSidebar
+                isOpen={isQuizMenuOpen}
+                onClose={() => setIsQuizMenuOpen(false)}
+            />
         </>
     );
 }
