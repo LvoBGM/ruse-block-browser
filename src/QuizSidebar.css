@@ -1,0 +1,169 @@
+/* Container */
+.sidebar-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 340px;
+  padding: 24px;
+  /* YouTube-style deep dark uniform background */
+  background-color: #0f0f0f; 
+  color: #aaaaaa; /* Muted gray for general text descriptions */
+  border-radius: 12px; /* Smooth modern corners */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  font-family: Roboto, Arial, sans-serif; /* Clean tech-stack font face */
+  z-index: 1000;
+}
+
+/* Header Sections */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+.sidebar-header h2 {
+  color: #ffffff; /* Crisp white headers */
+  font-weight: 500;
+}
+
+.sidebar-sub-header {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 0.88rem;
+  color: #aaaaaa; 
+}
+
+.sidebar-close-btn {
+  background: none;
+  border: none;
+  color: #888888;
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.sidebar-close-btn:hover {
+  color: #ffffff;
+}
+
+/* Layout Content */
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased vertical gap for border-free layouts */
+  margin-bottom: 28px;
+}
+
+/* Area Row without border-boxes to keep it looking clean and spacious */
+.area-card {
+  padding: 0;
+  background-color: transparent; 
+}
+
+/* Interactivity Layout */
+.sidebar-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-label-text {
+  font-size: 0.95rem;
+  color: #ffffff; /* Strong white labels */
+  font-weight: 500;
+}
+
+/* --- CUSTOM TOGGLE SWITCH STYLING --- */
+.toggle-switch-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  margin-right: 16px; /* Spacing between toggle and label text */
+}
+
+/* Hide default browser checkbox */
+.sidebar-toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The background capsule track */
+.sidebar-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3f3f3f; /* Muted gray capsule when inactive */
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+/* The round selector knob inside the toggle track */
+.sidebar-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 2.5px;
+  background-color: #aaaaaa; /* Medium gray knob when inactive */
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* ACTIVE STATE: Active toggle color palette styling */
+.sidebar-toggle-input:checked + .sidebar-toggle-slider {
+  background-color: #ffffff; /* White background track when active */
+}
+
+.sidebar-toggle-input:checked + .sidebar-toggle-slider:before {
+  transform: translateX(16px); /* Shifts knob forward neatly */
+  background-color: #0f0f0f; /* Inverts knob to base black color when active */
+}
+
+/* Dropdown Filters */
+.dropdown-container {
+  padding-left: 52px; /* Indents aligned perfectly with the text position */
+  margin-top: 8px;
+}
+
+.sidebar-select {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #1f1f1f; /* Secondary surface layer background */
+  color: #f1f1f1;
+  border: 1px solid #2f2f2f;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.sidebar-select:focus {
+  border-color: #ffffff;
+}
+
+/* Action Buttons */
+.start-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 18px; /* High boundary rounding matches YouTube primary buttons */
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.start-btn:hover {
+  background-color: #d9d9d9;
+}
