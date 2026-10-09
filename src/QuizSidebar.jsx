@@ -1,6 +1,27 @@
 import React from 'react';
 import "./QuizSidebar.css"
 
+import AreaCard from './AreaCard';
+
+const RESIDENTIAL_AREAS = [
+    {
+        id: 'zdravec',
+        name: 'Ж.К. Здравец',
+        options: [
+            { value: 'all', label: 'Всички (Имена и Номера)' },
+            { value: 'imena', label: 'Само Именувани (бл. Цена...)' },
+            { value: 'nomera', label: 'Само Номерирани (бл. 105...)' }
+        ]
+    },
+    {
+        id: 'zdravec_iztok',
+        name: 'Ж.К. Здравец-Изток',
+        options: [
+            { value: 'all', label: 'Всички блокове' },
+        ]
+    },
+];
+
 export default function QuizSidebar({ isOpen, onClose }) {
     if (!isOpen) return null;
     return (
@@ -23,36 +44,14 @@ export default function QuizSidebar({ isOpen, onClose }) {
 
         {/* List of Residential Areas */}
         <div className="sidebar-section">
-            
-            {/* Area 1: Zdravets */}
-            <div className="area-card">
-                <label className="sidebar-label">
-                    <div className="toggle-switch-wrapper">
-                        <input 
-                            type="checkbox" 
-                            defaultChecked 
-                            className="sidebar-toggle-input" 
-                            id="zdravec-toggle" /* Unique ID for each card */
-                            onChange={(e) => console.log("[UI] Zdravec toggled: ", e.target.checked)} 
-                        />
-                        <span className="sidebar-toggle-slider"></span>
-                    </div>
-                    <span className="sidebar-label-text">Ж.К. Здравец</span>
-                </label>
-                <div className="dropdown-container">
-                    <select 
-                        defaultValue="all" 
-                        onChange={(e) => console.log("[UI] Zdravec filter changed: ", e.target.value)} 
-                        className="sidebar-select"
-                    >
-                        <option value="all">Всички (Имена и Номера)</option>
-                        <option value="imena">Само Именувани (бл. Цена...)</option>
-                        <option value="nomera">Само Номерирани (бл. 105...)</option>
-                    </select>
-                </div>
-            </div>
-
-
+            {RESIDENTIAL_AREAS.map((area) => (
+                    <AreaCard
+                        key={area.id}
+                        id={area.id}
+                        name={area.name}
+                        options={area.options}
+                    />
+            ))}
         </div>
 
         {/* Action Button */}

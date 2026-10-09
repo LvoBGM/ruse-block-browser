@@ -25,3 +25,22 @@ html, body {
   color: #ffffff !important;
   text-decoration: underline;
 }
+
+.quiz-btn {
+    position: absolute;
+    top: 10px;        /* Matches the search container top offset */
+    right:10px;       /* Keeps it on the top right */
+    z-index: 1000;
+    
+    background-color: #ffffff; /* Same crisp white as search input */
+    color: #333333;           /* Dark text instead of orange */
+    
+    padding: 8px 12px;         /* Exact padding from .search-input */
+    border: 1px solid #ccc;    /* Matching border */
+    border-radius: 4px;        /* Matching 4px corners */
+    
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    box-sizing: border-box;
+}
