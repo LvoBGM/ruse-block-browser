@@ -28,7 +28,7 @@ export default function QuizSidebar({ isOpen, onClose }) {
     <div className="sidebar-container">
         {/* Header */}
         <div className="sidebar-header">
-            <h2 style={{ margin: 0, fontSize: "1.2rem" }}>🎯 Тест Квартали</h2>
+            <h2 style={{ margin: 0, fontSize: "1.2rem" }}>Тествай знанията си</h2>
             <button 
                 className="sidebar-close-btn" 
                 onClick={() => { 
