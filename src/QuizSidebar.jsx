@@ -8,19 +8,41 @@ const RESIDENTIAL_AREAS = [
         id: 'zdravec',
         name: 'Ж.К. Здравец',
         options: [
-            { value: 'all', label: 'Всички (Имена и Номера)' },
-            { value: 'imena', label: 'Само Именувани (бл. Цена...)' },
-            { value: 'nomera', label: 'Само Номерирани (бл. 105...)' }
+            { value: 'all', label: 'Всички блокове' },
+            { value: 'imena', label: 'Само Именувани' },
+            { value: 'nomera', label: 'Само Номерирани' }
         ]
     },
     {
         id: 'zdravec_iztok',
         name: 'Ж.К. Здравец-Изток',
         options: [
-            { value: 'all', label: 'Всички блокове' },
+            { value: 'all', label: 'Всички блокове' }
         ]
     },
+    {
+        id: 'zdravec_sever_1',
+        name: 'Ж.К. Здравец-Север 1',
+        options: [
+            { value: 'imena', label: 'Само Именувани' }
+        ]
+    },
+    {
+        id: 'zdravec_sever_2',
+        name: 'Ж.К. Здравец-Север 2',
+        options: [
+            { value: 'imena', label: 'Само Именувани' }
+        ]
+    },
+    {
+        id: 'zaharna_fabrika',
+        name: 'Ж.К. Захарна Фабрика',
+        options: [
+            { value: 'nomera', label: 'Само Номерирани' }
+        ]
+    }
 ];
+
 
 export default function QuizSidebar({ isOpen, onClose }) {
     if (!isOpen) return null;
