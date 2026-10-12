@@ -8,7 +8,7 @@
       "type": "Feature",
       "properties": {
         "id": 1,
-        "blockname": "Комаров"
+        "blockname": "бл. Комаров"
       },
       "geometry": {
         "type": "Polygon",
@@ -43,7 +43,7 @@
       "type": "Feature",
       "properties": {
         "id": 2,
-        "blockname": "Биковски"
+        "blockname": "бл. Биковски"
       },
       "geometry": {
         "type": "Polygon",
@@ -538,41 +538,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 15,
-        "blockname": "Unnamed Block"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              25.9821956,
-              43.8465274
-            ],
-            [
-              25.9814161,
-              43.8462081
-            ],
-            [
-              25.981488,
-              43.8461168
-            ],
-            [
-              25.9822675,
-              43.8464361
-            ],
-            [
-              25.9821956,
-              43.8465274
-            ]
-          ]
-        ]
-      },
-      "id": "way/366145578"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 16,
         "blockname": "бл. Бели Брези"
       },
@@ -796,6 +761,41 @@
         ]
       },
       "id": "way/257631630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 81,
+        "blockname": "бл. Гагарин"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9805123,
+              43.8489406
+            ],
+            [
+              25.9803102,
+              43.8488872
+            ],
+            [
+              25.9803754,
+              43.8487587
+            ],
+            [
+              25.9805776,
+              43.8488121
+            ],
+            [
+              25.9805123,
+              43.8489406
+            ]
+          ]
+        ]
+      },
+      "id": "way/366145606"
     }
   ]
 }
