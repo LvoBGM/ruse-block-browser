@@ -56,7 +56,7 @@ export default function SearchBar({ blockData, layersRef}) {
         <div className="search-container">
             <input
                 type="text"
-                placeholder="Search blocks..."
+                placeholder="Търси блок..."
                 value={query}
                 onChange={handleInputChange}
                 className="search-input"

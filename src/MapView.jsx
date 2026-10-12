@@ -1,11 +1,25 @@
 import { MapContainer, TileLayer, useMapEvents } from 'react-leaflet';
-import { useRef } from 'react';
-import blockData from './data/zdravec_iztok.json';
+import { useState, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet-edgebuffer'; 
 
 import MapBlocks from './MapBlocks';
 import SearchBar from './SearchBar';
+import QuizSidebar from './QuizSidebar';
+
+// Import data
+import zdravec_imena from './data/zdravec_imena.json';
+import zdravec_nomera from './data/zdravec_nomera.json';
+import zdravec_iztok from './data/zdravec_iztok.json';
+
+const blockData = {
+  type: "FeatureCollection",
+  features: [
+    ...zdravec_imena.features,
+    ...zdravec_iztok.features,
+    ...zdravec_nomera.features
+  ]
+};
 
 const RUSE_CENTER = [43.8456, 25.9558]; // Coordinates of Ruse Centre
 const ZOOM_LEVEL = 14;
@@ -21,7 +35,8 @@ const paddedRenderer = L.canvas({ padding: 1.0 });
 export default function MapView() {
     // References to all layers (used by search bar to activate popups when searching for a block)
     const layersRef = useRef({});
-    return (
+    const [isQuizMenuOpen, setIsQuizMenuOpen] = useState(false);
+    return ( 
         <>
             <MapContainer
                 center={RUSE_CENTER}
@@ -43,6 +58,23 @@ export default function MapView() {
 
                 <MapBlocks blockData={blockData} layersRef={layersRef}/>
             </MapContainer>
+            {!isQuizMenuOpen && (
+                <button
+                className='quiz-btn'
+                    onClick={() => {
+                        console.log('[UI] Floating "Quiz" button clicked');
+                        setIsQuizMenuOpen(true);
+                    }}
+                >
+                    Започни Quiz
+                </button>
+            )}
+
+            {/* 2. The Quiz Sidebar Menu */}
+            <QuizSidebar
+                isOpen={isQuizMenuOpen}
+                onClose={() => setIsQuizMenuOpen(false)}
+            />
         </>
     );
 }
