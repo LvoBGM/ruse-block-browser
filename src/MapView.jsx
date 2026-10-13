@@ -6,6 +6,7 @@ import 'leaflet-edgebuffer';
 import MapBlocks from './MapBlocks';
 import SearchBar from './SearchBar';
 import QuizSidebar from './QuizSidebar';
+import Quiz from './Quiz';
 
 // Import data
 // TODO: FIX ZAHARNA FABRIKA THERE IS LIKE ! NAMED BLOCK IN THERE I DONT WANNA FIX RN
@@ -43,6 +44,7 @@ export default function MapView() {
     // References to all layers (used by search bar to activate popups when searching for a block)
     const layersRef = useRef({});
     const [isQuizMenuOpen, setIsQuizMenuOpen] = useState(false);
+    const [isQuizActive, setIsQuizActive] = useState(false);
     return ( 
         <>
             <MapContainer
@@ -61,7 +63,7 @@ export default function MapView() {
                     edgeBufferTiles={3}
                 />
 
-                <SearchBar blockData={blockData} layersRef={layersRef}/>
+                {!isQuizActive && <SearchBar blockData={blockData} layersRef={layersRef}/>}
 
                 <MapBlocks blockData={blockData} layersRef={layersRef}/>
             </MapContainer>
@@ -77,9 +79,24 @@ export default function MapView() {
                 </button>
             )}
 
+            {isQuizActive && (
+                <button
+                    className='quiz-btn'
+                    onClick={() => {
+                        console.log('[UI] Floating "Quiz" button clicked');
+                        setIsQuizActive(false);
+                    }}
+                >
+                    Затвори Quiz
+                </button>
+            )}
+
+            {isQuizActive && <Quiz />}
+
             {/* 2. The Quiz Sidebar Menu */}
             <QuizSidebar
                 isOpen={isQuizMenuOpen}
+                setIsQuizActive={setIsQuizActive}
                 onClose={() => setIsQuizMenuOpen(false)}
             />
         </>

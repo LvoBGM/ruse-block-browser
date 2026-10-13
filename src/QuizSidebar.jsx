@@ -44,8 +44,14 @@ const RESIDENTIAL_AREAS = [
 ];
 
 
-export default function QuizSidebar({ isOpen, onClose }) {
+export default function QuizSidebar({ isOpen, setIsQuizActive, onClose }) {
     if (!isOpen) return null;
+
+    function handleStartQuiz() {
+        setIsQuizActive(true);
+        onClose();
+    }
+
     return (
     <div className="sidebar-container">
         {/* Header */}
@@ -78,7 +84,7 @@ export default function QuizSidebar({ isOpen, onClose }) {
 
         {/* Action Button */}
         <button 
-            onClick={() => console.log("[UI] Започни Тест clicked")} 
+            onClick={handleStartQuiz} 
             className="start-btn" 
         > 
             Започни Тест 
