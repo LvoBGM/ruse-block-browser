@@ -67,7 +67,7 @@ export default function MapView() {
 
                 <MapBlocks blockData={blockData} layersRef={layersRef}/>
             </MapContainer>
-            {!isQuizMenuOpen && (
+            {!isQuizMenuOpen && !isQuizActive && (
                 <button
                 className='quiz-btn'
                     onClick={() => {
@@ -79,19 +79,7 @@ export default function MapView() {
                 </button>
             )}
 
-            {isQuizActive && (
-                <button
-                    className='quiz-btn'
-                    onClick={() => {
-                        console.log('[UI] Floating "Quiz" button clicked');
-                        setIsQuizActive(false);
-                    }}
-                >
-                    Затвори Quiz
-                </button>
-            )}
-
-            {isQuizActive && <Quiz />}
+            {isQuizActive && <Quiz setIsQuizActive={setIsQuizActive} />}
 
             {/* 2. The Quiz Sidebar Menu */}
             <QuizSidebar
