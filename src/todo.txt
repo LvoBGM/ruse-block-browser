@@ -1,0 +1,6 @@
+1. You can toggle options when clicking on the div and not just the toggle switch, needs fix.
+2. Make a functioning quiz prompt system.
+3. Fix block gagarin being lighter that the other ones.
+4. Fix zaharna fabrika having both named (1 named block) and numbered blocks.
+5. Zdravez looks like it owns the other zdravez areas, because of how I draw the upside down triangle.
+6. When zooming in on parts of Ruse that arent done it shows like gray buildings with no names.
