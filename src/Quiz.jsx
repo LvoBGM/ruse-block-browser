@@ -1,6 +1,6 @@
 import './Quiz.css';
 
-export default function Quiz({ setIsQuizActive }) {
+export default function Quiz({ setIsQuizActive, handleCloseQuiz }) {
     return (
         <>
         <div className="quiz-prompt">
@@ -11,7 +11,7 @@ export default function Quiz({ setIsQuizActive }) {
         </div>
         <button
             className="quiz-end-btn"
-            onClick={() => setIsQuizActive(false)}
+            onClick={handleCloseQuiz}
         >
             Излез от Quiz
         </button>

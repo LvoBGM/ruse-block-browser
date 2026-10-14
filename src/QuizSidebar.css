@@ -166,3 +166,62 @@
 .start-btn:hover {
   background-color: #d9d9d9;
 }
+
+/* Expand/collapse button */
+.expand-button {
+  background: none;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  transition: color 0.15s ease;
+}
+
+.expand-button:hover {
+  color: #ffffff;
+}
+
+.chevron {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 12px;
+}
+
+.chevron.expanded {
+  transform: rotate(180deg);
+}
+
+/* Sub-checkboxes for options */
+.options-container {
+  padding-left: 52px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  transition: color 0.15s ease;
+}
+
+.option-checkbox:hover {
+  color: #ffffff;
+}
+
+.option-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #ffffff;
+}
+
+.option-checkbox span {
+  user-select: none;
+}

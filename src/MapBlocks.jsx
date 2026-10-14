@@ -1,11 +1,11 @@
 import { GeoJSON, useMapEvents } from 'react-leaflet';
 import { useState } from 'react';
-import blockData from './data/zdravec_nomera.json';
-//import blockData from './data/blocks.json';
 
 
 
 export default function MapBlocks({ blockData, layersRef}){
+    console.log("MapBlocks received blockData with", blockData?.features?.length, "features");
+
     const [zoomLevel, setZoomLevel] = useState(0);
     const [blockStyle, setBlockStyle] = useState({
         color: "#ff7800",
@@ -44,8 +44,9 @@ export default function MapBlocks({ blockData, layersRef}){
     };
 
     return(<>
-        {blockData && <GeoJSON 
-        data={blockData} 
+        {blockData && <GeoJSON
+        key={blockData.features.length}
+        data={blockData}
         style={blockStyle}
         onEachFeature={handleEachFeature}
         />}

@@ -17,16 +17,27 @@ import zdravec_sever_1 from './data/zdravec_sever_1.json';
 import zdravec_sever_2 from './data/zdravec_sever_2.json';
 import zaharna_fabrika from './data/zaharna_fabrika.json';
 
-const blockData = {
-  type: "FeatureCollection",
-  features: [
-    ...zdravec_imena.features,
-    ...zdravec_iztok.features,
-    ...zdravec_nomera.features,
-    ...zdravec_sever_1.features,
-    ...zdravec_sever_2.features,
-    ...zaharna_fabrika.features
-  ]
+// Mapping of the actual block data to its name
+const blockDataDictionary = {
+    zdravec_imena,
+    zdravec_iztok,
+    zdravec_nomera,
+    zdravec_sever_1,
+    zdravec_sever_2,
+    zaharna_fabrika
+};
+
+
+const allBlockData = {
+    type: "FeatureCollection",
+    features: [
+        ...zdravec_imena.features,
+        ...zdravec_iztok.features,
+        ...zdravec_nomera.features,
+        ...zdravec_sever_1.features,
+        ...zdravec_sever_2.features,
+        ...zaharna_fabrika.features
+    ] 
 };
 
 const RUSE_CENTER = [43.8456, 25.9558]; // Coordinates of Ruse Centre
@@ -45,6 +56,14 @@ export default function MapView() {
     const layersRef = useRef({});
     const [isQuizMenuOpen, setIsQuizMenuOpen] = useState(false);
     const [isQuizActive, setIsQuizActive] = useState(false);
+    const [renderedBlockData, setRenderedBlockData] = useState(allBlockData);
+
+    function handleCloseQuiz() {
+        setIsQuizActive(false);
+        setIsQuizMenuOpen(false);
+        setRenderedBlockData(allBlockData);
+    }
+
     return ( 
         <>
             <MapContainer
@@ -63,9 +82,9 @@ export default function MapView() {
                     edgeBufferTiles={3}
                 />
 
-                {!isQuizActive && <SearchBar blockData={blockData} layersRef={layersRef}/>}
+                {!isQuizActive && <SearchBar blockData={renderedBlockData} layersRef={layersRef}/>}
 
-                <MapBlocks blockData={blockData} layersRef={layersRef}/>
+                <MapBlocks blockData={renderedBlockData} layersRef={layersRef}/>
             </MapContainer>
             {!isQuizMenuOpen && !isQuizActive && (
                 <button
@@ -79,13 +98,15 @@ export default function MapView() {
                 </button>
             )}
 
-            {isQuizActive && <Quiz setIsQuizActive={setIsQuizActive} />}
+            {isQuizActive && <Quiz setIsQuizActive={setIsQuizActive} handleCloseQuiz={handleCloseQuiz} />}
 
             {/* 2. The Quiz Sidebar Menu */}
             <QuizSidebar
                 isOpen={isQuizMenuOpen}
                 setIsQuizActive={setIsQuizActive}
                 onClose={() => setIsQuizMenuOpen(false)}
+                setRenderedBlockData={setRenderedBlockData}
+                blockDataDictionary={blockDataDictionary}
             />
         </>
     );
