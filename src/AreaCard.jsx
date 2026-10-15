@@ -31,29 +31,26 @@ export default function AreaCard({ id, name, options, setSelectedOptions }) {
     return (
         <div className="area-card">
             {/* Main area toggle */}
-            <label className="sidebar-label">
-                <div className="toggle-switch-wrapper">
-                    <input 
-                        type="checkbox" 
+            <div className="sidebar-label">
+                <label className="toggle-switch-wrapper">
+                    <input
+                        type="checkbox"
                         defaultChecked
-                        className="sidebar-toggle-input" 
+                        className="sidebar-toggle-input"
                         id={`${id}-toggle`}
                         onChange={handleMainToggle}
                     />
                     <span className="sidebar-toggle-slider"></span>
-                </div>
-                <span className="sidebar-label-text">{name}</span>
+                </label>
+                <div className="label-content" onClick={() => setIsExpanded(!isExpanded)}>
+                    <span className="sidebar-label-text">{name}</span>
 
-                {/* Expand/collapse button */}
-                {options && options.length > 1 && (
-                    <button
-                        className="expand-button"
-                        onClick={() => setIsExpanded(!isExpanded)}
-                    >
+                    {/* Expand/collapse symbol */}
+                    {options && options.length > 1 && (
                         <span className={`chevron ${isExpanded ? 'expanded' : ''}`}>▼</span>
-                    </button>
-                )}
-            </label>
+                    )}
+                </div>
+            </div>
  
             {/* Sub-checkboxes for options */}
             {isExpanded && options && options.length > 1 && (

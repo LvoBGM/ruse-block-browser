@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 
 export default function MapBlocks({ blockData, layersRef}){
-    console.log("MapBlocks received blockData with", blockData?.features?.length, "features");
 
     const [zoomLevel, setZoomLevel] = useState(0);
     const [blockStyle, setBlockStyle] = useState({

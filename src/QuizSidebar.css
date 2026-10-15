@@ -65,13 +65,20 @@
 .sidebar-label {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .sidebar-label-text {
   font-size: 0.95rem;
   color: #ffffff; /* Strong white labels */
   font-weight: 500;
+}
+
+.label-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
 }
 
 /* --- CUSTOM TOGGLE SWITCH STYLING --- */
@@ -186,6 +193,7 @@
   display: inline-block;
   transition: transform 0.2s ease;
   font-size: 12px;
+  margin-left: 8px;
 }
 
 .chevron.expanded {

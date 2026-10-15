@@ -74,8 +74,7 @@ export default function QuizSidebar({ isOpen, setIsQuizActive, onClose, setRende
             type: "FeatureCollection",
              features: quizFeatures
         }
-
-        console.log("Setting block data to", selectedOptions);
+        
         setRenderedBlockData(quizData);
 
         setIsQuizActive(true);
