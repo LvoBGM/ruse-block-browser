@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 export default function AreaCard({ id, name, options, setSelectedOptions }) {
     const [isExpanded, setIsExpanded] = useState(false);
+    const [hasOptions, setHasOptions] = useState(options && options.length > 1);
 
     function handleMainToggle(e) {
         setSelectedOptions(prevOptions => ({
@@ -42,18 +43,18 @@ export default function AreaCard({ id, name, options, setSelectedOptions }) {
                     />
                     <span className="sidebar-toggle-slider"></span>
                 </label>
-                <div className={`label-content ${options && options.length > 1 ? 'clickable' : ''}`} onClick={options && options.length > 1 ? () => setIsExpanded(!isExpanded) : undefined}>
+                <div className={`label-content ${hasOptions ? 'clickable' : ''}`} onClick={hasOptions ? () => setIsExpanded(!isExpanded) : undefined}>
                     <span className="sidebar-label-text">{name}</span>
 
                     {/* Expand/collapse symbol */}
-                    {options && options.length > 1 && (
+                    {hasOptions && (
                         <span className={`chevron ${isExpanded ? 'expanded' : ''}`}>▼</span>
                     )}
                 </div>
             </div>
  
             {/* Sub-checkboxes for options */}
-            {isExpanded && options && options.length > 1 && (
+            {isExpanded && hasOptions && (
                 <div className="options-container">
                     {options.map((option) => (
                         <label key={option.value} className="option-checkbox">
