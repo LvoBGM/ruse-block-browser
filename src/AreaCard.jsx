@@ -42,7 +42,7 @@ export default function AreaCard({ id, name, options, setSelectedOptions }) {
                     />
                     <span className="sidebar-toggle-slider"></span>
                 </label>
-                <div className="label-content" onClick={() => setIsExpanded(!isExpanded)}>
+                <div className={`label-content ${options && options.length > 1 ? 'clickable' : ''}`} onClick={options && options.length > 1 ? () => setIsExpanded(!isExpanded) : undefined}>
                     <span className="sidebar-label-text">{name}</span>
 
                     {/* Expand/collapse symbol */}
