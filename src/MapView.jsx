@@ -11,13 +11,21 @@ import QuizSidebar from './QuizSidebar';
 import zdravec_imena from './data/zdravec_imena.json';
 import zdravec_nomera from './data/zdravec_nomera.json';
 import zdravec_iztok from './data/zdravec_iztok.json';
+import zdravec_sever_1 from './data/zdravec_sever_1.json';
+import zdravec_sever_2 from './data/zdravec_sever_2.json';
+import zaharna_fabrika from './data/zaharna_fabrika.json';
+import yalta from './data/yalta.json';
 
 const blockData = {
   type: "FeatureCollection",
   features: [
     ...zdravec_imena.features,
     ...zdravec_iztok.features,
-    ...zdravec_nomera.features
+    ...zdravec_nomera.features,
+    ...zdravec_sever_1.features,
+    ...zdravec_sever_2.features,
+    ...zaharna_fabrika.features,
+    ...yalta.features
   ]
 };
 
