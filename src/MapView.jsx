@@ -52,7 +52,8 @@ const RUSE_BOUNDS = L.latLngBounds(
 );
 
 // This just tells the map container to render poligons when you arent looking at them so that they dont disappear
-const paddedRenderer = L.canvas({ padding: 1.0 });
+// Set to undefined to use default renderer, or set a custom renderer value
+const paddedRenderer = undefined; // L.canvas({ padding: 1.0 });
 
 export default function MapView() {
     // References to all layers (used by search bar to activate popups when searching for a block)
@@ -72,17 +73,17 @@ export default function MapView() {
             <MapContainer
                 center={RUSE_CENTER}
                 zoom={ZOOM_LEVEL}
-                style={{ height: '100vh', width: '100vw', background: '#000000' }} 
+                style={{ height: '100vh', width: '100vw', background: '#000000' }}
                 minZoom={14}
                 maxBounds={RUSE_BOUNDS}
                 maxBoundsViscosity={1.0}
-                renderer={paddedRenderer}
+                {...(paddedRenderer && { renderer: paddedRenderer })}
             >
                 <TileLayer
                     url={`https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`}
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com">CARTO</a>'
-                    keepBuffer={15}
-                    edgeBufferTiles={3}
+                    keepBuffer={0}
+                    edgeBufferTiles={0}
                 />
 
                 {!isQuizActive && <SearchBar blockData={renderedBlockData} layersRef={layersRef}/>}
