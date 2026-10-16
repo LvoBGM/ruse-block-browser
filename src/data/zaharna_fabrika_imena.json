@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-10-09T16:36:19Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8",
+        "blockname": "бл. Липа"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.9926259,
+              43.8680111
+            ],
+            [
+              25.9924793,
+              43.867952
+            ],
+            [
+              25.99264,
+              43.8677451
+            ],
+            [
+              25.9927865,
+              43.8678042
+            ],
+            [
+              25.9926259,
+              43.8680111
+            ]
+          ]
+        ]
+      },
+      "id": "way/392136049"
+    }
+  ]
+}

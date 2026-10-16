@@ -1,4 +1,3 @@
-1. You can toggle options when clicking on the div and not just the toggle switch, needs fix.
 2. Make a functioning quiz prompt system.
 3. Fix block gagarin being lighter that the other ones.
 4. Fix zaharna fabrika having both named (1 named block) and numbered blocks.

@@ -15,7 +15,8 @@ import zdravec_nomera from './data/zdravec_nomera.json';
 import zdravec_iztok from './data/zdravec_iztok.json';
 import zdravec_sever_1 from './data/zdravec_sever_1.json';
 import zdravec_sever_2 from './data/zdravec_sever_2.json';
-import zaharna_fabrika from './data/zaharna_fabrika.json';
+import zaharna_fabrika_nomera from './data/zaharna_fabrika_nomera.json';
+import zaharna_fabrika_imena from './data/zaharna_fabrika_imena.json';
 
 // Mapping of the actual block data to its name
 const blockDataDictionary = {
@@ -24,7 +25,8 @@ const blockDataDictionary = {
     zdravec_nomera,
     zdravec_sever_1,
     zdravec_sever_2,
-    zaharna_fabrika
+    zaharna_fabrika_nomera,
+    zaharna_fabrika_imena
 };
 
 
@@ -36,7 +38,8 @@ const allBlockData = {
         ...zdravec_nomera.features,
         ...zdravec_sever_1.features,
         ...zdravec_sever_2.features,
-        ...zaharna_fabrika.features
+        ...zaharna_fabrika_nomera.features,
+        ...zaharna_fabrika_imena.features
     ] 
 };
 

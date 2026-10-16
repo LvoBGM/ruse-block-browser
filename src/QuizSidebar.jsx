@@ -36,7 +36,8 @@ const RESIDENTIAL_AREAS = [
         id: 'zaharna_fabrika',
         name: 'Ж.К. Захарна Фабрика',
         options: [
-            { value: '', label: 'Номерирани' }
+            { value: '_imena', label: 'Именa' },
+            { value: '_nomera', label: 'Номерa' }
         ]
     }
 ];

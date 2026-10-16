@@ -26,6 +26,16 @@ html, body {
   text-decoration: underline;
 }
 
+/* Prevent layer highlight when popup is open */
+.leaflet-interactive {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.leaflet-pane {
+  filter: none !important;
+}
+
 .quiz-btn {
     position: absolute;
     top: 10px;        /* Matches the search container top offset */
