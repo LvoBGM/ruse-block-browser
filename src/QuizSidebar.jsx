@@ -4,6 +4,12 @@ import "./QuizSidebar.css"
 
 import AreaCard from './AreaCard';
 
+/**
+ * Configuration data for residential areas available in the quiz.
+ * Each area has an ID, display name, and options (e.g., names vs numbers).
+ * Having at least 1 option is mandatory for things not to break
+ * @type {Array<{id: string, name: string, options: Array<{value: string, label: string}>}>}
+ */
 const RESIDENTIAL_AREAS = [
     {
         id: 'zdravec',
@@ -16,7 +22,9 @@ const RESIDENTIAL_AREAS = [
     {
         id: 'zdravec_iztok',
         name: 'Ж.К. Здравец-Изток',
-        options: []
+        options: [
+            { value: '', label: 'Всички' }
+        ]
     },
     {
         id: 'zdravec_sever_1',
@@ -65,6 +73,8 @@ export default function QuizSidebar({ isOpen, setIsQuizActive, onClose, setRende
     function handleStartQuiz() {
         let quizFeatures = []
 
+        // Aggregate features from selected residential areas into quizFeatures
+        // Only includes areas where the user has enabled the corresponding option
         for (const [key, value] of Object.entries(blockDataDictionary)) {
             if (selectedOptions[key]) {
                 quizFeatures = [...quizFeatures, ...value.features];
@@ -75,7 +85,7 @@ export default function QuizSidebar({ isOpen, setIsQuizActive, onClose, setRende
             type: "FeatureCollection",
              features: quizFeatures
         }
-        
+
         setRenderedBlockData(quizData);
 
         setIsQuizActive(true);
