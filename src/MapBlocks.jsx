@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 
 
-export default function MapBlocks({ blockData, layersRef}){
+export default function MapBlocks({ blockData, layersRef, onBlockClick}){
 
     const [zoomLevel, setZoomLevel] = useState(0);
     const [blockStyle, setBlockStyle] = useState({
@@ -32,7 +32,9 @@ export default function MapBlocks({ blockData, layersRef}){
 
         layer.on({
             click: (event) => {
-                console.log(feature.properties);
+                if (onBlockClick) {
+                    onBlockClick(feature.properties);
+                }
             }
         });
 
