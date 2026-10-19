@@ -26,7 +26,7 @@ export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, b
 
         if (nextBlock === undefined) {
             console.log("Quiz completed");
-            setIsQuizActive(false);
+            handleCloseQuiz();
             return;
         }
 
