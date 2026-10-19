@@ -74,6 +74,10 @@ export default function MapView() {
         setClickedBlock(blockProperties);
     }
 
+    function clearClickedBlock() {
+        setClickedBlock(null);
+    }
+
     return ( 
         <>
             <MapContainer
@@ -117,6 +121,7 @@ export default function MapView() {
                 onClose={() => setIsQuizMenuOpen(false)}
                 setRenderedBlockData={setRenderedBlockData}
                 blockDataDictionary={blockDataDictionary}
+                clearClickedBlock={clearClickedBlock}
             />
         </>
     );

@@ -51,7 +51,7 @@ const RESIDENTIAL_AREAS = [
 ];
 
 
-export default function QuizSidebar({ isOpen, setIsQuizActive, onClose, setRenderedBlockData, blockDataDictionary }) {
+export default function QuizSidebar({ isOpen, setIsQuizActive, onClose, setRenderedBlockData, blockDataDictionary, clearClickedBlock }) {
     if (!isOpen) return null;
 
     const [selectedOptions, setSelectedOptions] = useState({});
@@ -87,6 +87,7 @@ export default function QuizSidebar({ isOpen, setIsQuizActive, onClose, setRende
         }
 
         setRenderedBlockData(quizData);
+        clearClickedBlock();
 
         setIsQuizActive(true);
         onClose();
