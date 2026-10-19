@@ -1,4 +1,3 @@
-2. Make a functioning quiz prompt system.
 3. Fix block gagarin being lighter that the other ones.
 4. Fix zaharna fabrika having both named (1 named block) and numbered blocks.
 5. Zdravez looks like it owns the other zdravez areas, because of how I draw the upside down triangle.

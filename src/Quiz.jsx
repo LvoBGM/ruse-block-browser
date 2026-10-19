@@ -1,22 +1,29 @@
 import './Quiz.css';
 import { useState, useEffect } from 'react';
+import clickCorrectSound from './assets/click-correct.mp3';
+import clickIncorrectSound from './assets/click-correct.mp3'; // TODO: replace with incorrect sound
+
 
 export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, blockData }) {
     // Clean and randomize block data
     const cleanBlockData = shuffle(blockData.features.map(block => block.properties?.blockname));
 
-
     const [blockQueue, setBlockQueue] = useState(cleanBlockData);
     const [targetBlock, setTargetBlock] = useState(cleanBlockData[0]);
+
+    const clickCorrectAudio = new Audio(clickCorrectSound);
+    const clickIncorrectAudio = new Audio(clickIncorrectSound);
 
     useEffect(() => {
         if (clickedBlock) {
             const clickedBlockName = clickedBlock.blockname;
             if (clickedBlockName === targetBlock) {
                 console.log("block was correct");
+                clickCorrectAudio.play();
                 handleNextBlock();
             } else {
                 console.log("block was incorrect");
+                clickIncorrectAudio.play();
             }
         }
     }, [clickedBlock]);
