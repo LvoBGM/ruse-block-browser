@@ -1,29 +1,98 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import "./QuizSidebar.css"
 
 import AreaCard from './AreaCard';
 
+/**
+ * Configuration data for residential areas available in the quiz.
+ * Each area has an ID, display name, and options (e.g., names vs numbers).
+ * Having at least 1 option is mandatory for things not to break
+ * @type {Array<{id: string, name: string, options: Array<{value: string, label: string}>}>}
+ */
 const RESIDENTIAL_AREAS = [
     {
         id: 'zdravec',
         name: 'Ж.К. Здравец',
         options: [
-            { value: 'all', label: 'Всички (Имена и Номера)' },
-            { value: 'imena', label: 'Само Именувани (бл. Цена...)' },
-            { value: 'nomera', label: 'Само Номерирани (бл. 105...)' }
+            { value: '_imena', label: 'Именa' },
+            { value: '_nomera', label: 'Номерa' }
         ]
     },
     {
         id: 'zdravec_iztok',
         name: 'Ж.К. Здравец-Изток',
         options: [
-            { value: 'all', label: 'Всички блокове' },
+            { value: '', label: 'Всички' }
         ]
     },
+    {
+        id: 'zdravec_sever_1',
+        name: 'Ж.К. Здравец-Север 1',
+        options: [
+            { value: '', label: 'Именувани' }
+        ]
+    },
+    {
+        id: 'zdravec_sever_2',
+        name: 'Ж.К. Здравец-Север 2',
+        options: [
+            { value: '', label: 'Именувани' }
+        ]
+    },
+    {
+        id: 'zaharna_fabrika',
+        name: 'Ж.К. Захарна Фабрика',
+        options: [
+            { value: '_imena', label: 'Именa' },
+            { value: '_nomera', label: 'Номерa' }
+        ]
+    }
 ];
 
-export default function QuizSidebar({ isOpen, onClose }) {
+
+export default function QuizSidebar({ isOpen, setIsQuizActive, onClose, setRenderedBlockData, blockDataDictionary, clearClickedBlock }) {
     if (!isOpen) return null;
+
+    const [selectedOptions, setSelectedOptions] = useState({});
+
+    // Initialize selected options with all options selected by default
+    useEffect(() => {
+        const defaults = {};
+        
+        // Generate a key for each residential area option
+        RESIDENTIAL_AREAS.forEach((area, index) => {
+            area.options.forEach((option, index) => {
+                defaults[`${area.id}${option.value}`] = true;
+            })
+        })
+
+        setSelectedOptions(defaults);
+    }, []);
+
+    function handleStartQuiz() {
+        let quizFeatures = []
+
+        // Aggregate features from selected residential areas into quizFeatures
+        // Only includes areas where the user has enabled the corresponding option
+        for (const [key, value] of Object.entries(blockDataDictionary)) {
+            if (selectedOptions[key]) {
+                quizFeatures = [...quizFeatures, ...value.features];
+            }
+        }
+
+        const quizData = {
+            type: "FeatureCollection",
+             features: quizFeatures
+        }
+
+        setRenderedBlockData(quizData);
+        clearClickedBlock();
+
+        setIsQuizActive(true);
+        onClose();
+    }
+
     return (
     <div className="sidebar-container">
         {/* Header */}
@@ -32,7 +101,6 @@ export default function QuizSidebar({ isOpen, onClose }) {
             <button 
                 className="sidebar-close-btn" 
                 onClick={() => { 
-                    console.log("[UI] Close button clicked"); 
                     onClose(); 
                 }}
             > 
@@ -50,13 +118,14 @@ export default function QuizSidebar({ isOpen, onClose }) {
                         id={area.id}
                         name={area.name}
                         options={area.options}
+                        setSelectedOptions={setSelectedOptions}
                     />
             ))}
         </div>
 
         {/* Action Button */}
         <button 
-            onClick={() => console.log("[UI] Започни Тест clicked")} 
+            onClick={handleStartQuiz} 
             className="start-btn" 
         > 
             Започни Тест 

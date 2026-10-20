@@ -5,7 +5,7 @@
   right: 20px;
   width: 340px;
   padding: 24px;
-  background-color: #0f0f0f; 
+  background-color: #1a1a1a; 
   color: #aaaaaa; /* Muted gray for general text descriptions */
   border-radius: 12px; /* Smooth modern corners */
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
@@ -65,13 +65,23 @@
 .sidebar-label {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .sidebar-label-text {
   font-size: 0.95rem;
   color: #ffffff; /* Strong white labels */
   font-weight: 500;
+}
+
+.label-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.label-content.clickable {
+  cursor: pointer;
 }
 
 /* --- CUSTOM TOGGLE SWITCH STYLING --- */
@@ -123,7 +133,7 @@
 
 .sidebar-toggle-input:checked + .sidebar-toggle-slider:before {
   transform: translateX(16px); /* Shifts knob forward neatly */
-  background-color: #0f0f0f; /* Inverts knob to base black color when active */
+  background-color: #1a1a1a; /* Inverts knob to base black color when active */
 }
 
 /* Dropdown Filters */
@@ -135,9 +145,9 @@
 .sidebar-select {
   width: 100%;
   padding: 10px 12px;
-  background-color: #1f1f1f; /* Secondary surface layer background */
+  background-color: #252525; /* Secondary surface layer background */
   color: #f1f1f1;
-  border: 1px solid #2f2f2f;
+  border: 1px solid #3a3a3a;
   border-radius: 6px;
   font-size: 0.85rem;
   outline: none;
@@ -154,7 +164,7 @@
   width: 100%;
   padding: 12px;
   background-color: #ffffff;
-  color: #0f0f0f;
+  color: #1a1a1a;
   border: none;
   border-radius: 18px; /* High boundary rounding matches YouTube primary buttons */
   font-weight: 500;
@@ -165,4 +175,64 @@
 
 .start-btn:hover {
   background-color: #d9d9d9;
+}
+
+/* Expand/collapse button */
+.expand-button {
+  background: none;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  transition: color 0.15s ease;
+}
+
+.expand-button:hover {
+  color: #ffffff;
+}
+
+.chevron {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.chevron.expanded {
+  transform: rotate(180deg);
+}
+
+/* Sub-checkboxes for options */
+.options-container {
+  padding-left: 52px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  transition: color 0.15s ease;
+}
+
+.option-checkbox:hover {
+  color: #ffffff;
+}
+
+.option-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #ffffff;
+}
+
+.option-checkbox span {
+  user-select: none;
 }
