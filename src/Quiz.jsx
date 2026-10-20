@@ -4,7 +4,8 @@ import clickCorrectSound from './assets/click-correct.mp3';
 import clickIncorrectSound from './assets/click-correct.mp3'; // TODO: replace with incorrect sound
 
 
-export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, blockData }) {
+export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, blockData, onQuizComplete }) {
+    
     // Clean and randomize block data
     const cleanBlockData = shuffle(blockData.features.map(block => block.properties?.blockname));
 
@@ -32,8 +33,7 @@ export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, b
         const nextBlock = blockQueue[1];
 
         if (nextBlock === undefined) {
-            console.log("Quiz completed");
-            handleCloseQuiz();
+            onQuizComplete();
             return;
         }
 

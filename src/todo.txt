@@ -5,3 +5,4 @@
 7. Add a button to reset the quiz
 8. Log quiz progress
 9. Tell the User when he has completed the quiz
+10. Put isquizactive in quiz.jsx

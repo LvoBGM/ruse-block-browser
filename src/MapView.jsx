@@ -7,9 +7,9 @@ import MapBlocks from './MapBlocks';
 import SearchBar from './SearchBar';
 import QuizSidebar from './QuizSidebar';
 import Quiz from './Quiz';
+import QuizComplete from './QuizComplete';
 
 // Import data
-// TODO: FIX ZAHARNA FABRIKA THERE IS LIKE ! NAMED BLOCK IN THERE I DONT WANNA FIX RN
 import zdravec_imena from './data/zdravec_imena.json';
 import zdravec_nomera from './data/zdravec_nomera.json';
 import zdravec_iztok from './data/zdravec_iztok.json';
@@ -66,6 +66,7 @@ export default function MapView() {
     const layersRef = useRef({});
     const [isQuizMenuOpen, setIsQuizMenuOpen] = useState(false);
     const [isQuizActive, setIsQuizActive] = useState(false);
+    const [isQuizComplete, setIsQuizComplete] = useState(false);
     const [renderedBlockData, setRenderedBlockData] = useState(allBlockData);
     const [clickedBlock, setClickedBlock] = useState(null);
 
@@ -74,6 +75,11 @@ export default function MapView() {
         setIsQuizMenuOpen(false);
         setRenderedBlockData(allBlockData);
         setClickedBlock(null);
+        setIsQuizComplete(false);
+    }
+
+    function handleQuizComplete() {
+        setIsQuizComplete(true);
     }
 
     function handleBlockClick(blockProperties) {
@@ -106,11 +112,10 @@ export default function MapView() {
 
                 <MapBlocks blockData={renderedBlockData} layersRef={layersRef} onBlockClick={handleBlockClick}/>
             </MapContainer>
-            {!isQuizMenuOpen && !isQuizActive && (
+            {!isQuizMenuOpen && !isQuizActive && !isQuizComplete && (
                 <button
                 className='quiz-btn'
                     onClick={() => {
-                        console.log('[UI] Floating "Quiz" button clicked');
                         setIsQuizMenuOpen(true);
                     }}
                 >
@@ -118,9 +123,16 @@ export default function MapView() {
                 </button>
             )}
 
-            {isQuizActive && <Quiz setIsQuizActive={setIsQuizActive} handleCloseQuiz={handleCloseQuiz} clickedBlock={clickedBlock} blockData={renderedBlockData} />}
+            {isQuizActive && !isQuizComplete &&
+            <Quiz 
+                setIsQuizActive={setIsQuizActive} 
+                handleCloseQuiz={handleCloseQuiz} 
+                clickedBlock={clickedBlock} 
+                blockData={renderedBlockData} 
+                onQuizComplete={handleQuizComplete}
+            />}
 
-            {/* 2. The Quiz Sidebar Menu */}
+            {/* The Quiz Sidebar Menu */}
             <QuizSidebar
                 isOpen={isQuizMenuOpen}
                 setIsQuizActive={setIsQuizActive}
@@ -129,6 +141,8 @@ export default function MapView() {
                 blockDataDictionary={blockDataDictionary}
                 clearClickedBlock={clearClickedBlock}
             />
+            {/* The Quiz Complete Menu */}
+            {isQuizComplete && <QuizComplete isOpen={isQuizComplete} onClose={handleCloseQuiz} />}
         </>
     );
 }
