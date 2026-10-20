@@ -47,6 +47,20 @@ const RESIDENTIAL_AREAS = [
             { value: '_imena', label: 'Именa' },
             { value: '_nomera', label: 'Номерa' }
         ]
+    },
+    {
+        id: 'yalta',
+        name: 'Ж.К. Ялта',
+        options: [
+            { value: '', label: 'Всички' }
+        ]
+    },
+    {
+        id: 'rodina_1',
+        name: 'Ж.К. Родина 1',
+        options: [
+            { value: '', label: 'Всички' }
+        ]
     }
 ];
 
