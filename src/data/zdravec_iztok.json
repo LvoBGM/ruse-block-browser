@@ -8,7 +8,7 @@
       "type": "Feature",
       "properties": {
         "id": 1,
-        "blockname": "бл.Сметана"
+        "blockname": "бл. Сметана"
       },
       "geometry": {
         "type": "Polygon",
@@ -43,7 +43,7 @@
       "type": "Feature",
       "properties": {
         "id": 2,
-        "blockname": "бл.Мусоргски"
+        "blockname": "бл. Мусоргски"
       },
       "geometry": {
         "type": "Polygon",
@@ -113,7 +113,7 @@
       "type": "Feature",
       "properties": {
         "id": 4,
-        "blockname": "бл.Падаревски"
+        "blockname": "бл. Падаревски"
       },
       "geometry": {
         "type": "Polygon",
@@ -148,7 +148,7 @@
       "type": "Feature",
       "properties": {
         "id": 5,
-        "blockname": "бл.Маестро Атанасов"
+        "blockname": "бл. Маестро Атанасов"
       },
       "geometry": {
         "type": "Polygon",
@@ -183,7 +183,7 @@
       "type": "Feature",
       "properties": {
         "id": 6,
-        "blockname": "бл.Чайковски"
+        "blockname": "бл. Чайковски"
       },
       "geometry": {
         "type": "Polygon",
@@ -218,7 +218,7 @@
       "type": "Feature",
       "properties": {
         "id": 7,
-        "blockname": "бл.Страхил войвода"
+        "blockname": "бл. Страхил войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -253,7 +253,7 @@
       "type": "Feature",
       "properties": {
         "id": 8,
-        "blockname": "бл.Добри Христов"
+        "blockname": "бл. Добри Христов"
       },
       "geometry": {
         "type": "Polygon",
@@ -288,7 +288,7 @@
       "type": "Feature",
       "properties": {
         "id": 9,
-        "blockname": "бл.Гларус"
+        "blockname": "бл. Гларус"
       },
       "geometry": {
         "type": "Polygon",
@@ -323,7 +323,7 @@
       "type": "Feature",
       "properties": {
         "id": 10,
-        "blockname": "бл.София"
+        "blockname": "бл. София"
       },
       "geometry": {
         "type": "Polygon",
@@ -406,7 +406,7 @@
       "type": "Feature",
       "properties": {
         "id": 11,
-        "blockname": "бл.Добри Чинтулов"
+        "blockname": "бл. Добри Чинтулов"
       },
       "geometry": {
         "type": "Polygon",
@@ -476,7 +476,7 @@
       "type": "Feature",
       "properties": {
         "id": 13,
-        "blockname": "бл.Мура"
+        "blockname": "бл. Мура"
       },
       "geometry": {
         "type": "Polygon",
@@ -575,7 +575,7 @@
       "type": "Feature",
       "properties": {
         "id": 14,
-        "blockname": "бл.Жерав"
+        "blockname": "бл. Жерав"
       },
       "geometry": {
         "type": "Polygon",
@@ -717,7 +717,7 @@
       "type": "Feature",
       "properties": {
         "id": 16,
-        "blockname": "бл.Лебед"
+        "blockname": "бл. Лебед"
       },
       "geometry": {
         "type": "Polygon",
@@ -752,7 +752,7 @@
       "type": "Feature",
       "properties": {
         "id": 17,
-        "blockname": "бл.Гергана"
+        "blockname": "бл. Гергана"
       },
       "geometry": {
         "type": "Polygon",
@@ -787,7 +787,7 @@
       "type": "Feature",
       "properties": {
         "id": 18,
-        "blockname": "бл.Ела"
+        "blockname": "бл. Ела"
       },
       "geometry": {
         "type": "Polygon",
@@ -822,7 +822,7 @@
       "type": "Feature",
       "properties": {
         "id": 19,
-        "blockname": "бл.Албена"
+        "blockname": "бл. Албена"
       },
       "geometry": {
         "type": "Polygon",
@@ -857,7 +857,7 @@
       "type": "Feature",
       "properties": {
         "id": 20,
-        "blockname": "бл.Ясен"
+        "blockname": "бл. Ясен"
       },
       "geometry": {
         "type": "Polygon",
@@ -892,7 +892,7 @@
       "type": "Feature",
       "properties": {
         "id": 21,
-        "blockname": "бл.Чинар"
+        "blockname": "бл. Чинар"
       },
       "geometry": {
         "type": "Polygon",
@@ -927,7 +927,7 @@
       "type": "Feature",
       "properties": {
         "id": 22,
-        "blockname": "бл.Боряна"
+        "blockname": "бл. Боряна"
       },
       "geometry": {
         "type": "Polygon",
@@ -962,7 +962,7 @@
       "type": "Feature",
       "properties": {
         "id": 23,
-        "blockname": "бл.Кремена"
+        "blockname": "бл. Кремена"
       },
       "geometry": {
         "type": "Polygon",
@@ -997,7 +997,7 @@
       "type": "Feature",
       "properties": {
         "id": 24,
-        "blockname": "бл.Бреза"
+        "blockname": "бл. Бреза"
       },
       "geometry": {
         "type": "Polygon",
@@ -1032,7 +1032,7 @@
       "type": "Feature",
       "properties": {
         "id": 25,
-        "blockname": "бл.Калина"
+        "blockname": "бл. Калина"
       },
       "geometry": {
         "type": "Polygon",
@@ -1067,7 +1067,7 @@
       "type": "Feature",
       "properties": {
         "id": 26,
-        "blockname": "бл.Чайка"
+        "blockname": "бл. Чайка"
       },
       "geometry": {
         "type": "Polygon",
@@ -1102,7 +1102,7 @@
       "type": "Feature",
       "properties": {
         "id": 27,
-        "blockname": "бл.Ивайло"
+        "blockname": "бл. Ивайло"
       },
       "geometry": {
         "type": "Polygon",
@@ -1137,7 +1137,7 @@
       "type": "Feature",
       "properties": {
         "id": 28,
-        "blockname": "бл.Хвойна"
+        "blockname": "бл. Хвойна"
       },
       "geometry": {
         "type": "Polygon",
@@ -1172,7 +1172,7 @@
       "type": "Feature",
       "properties": {
         "id": 29,
-        "blockname": "бл.Явор"
+        "blockname": "бл. Явор"
       },
       "geometry": {
         "type": "Polygon",
@@ -1399,7 +1399,7 @@
       "type": "Feature",
       "properties": {
         "id": 36,
-        "blockname": "бл.Индже войвода"
+        "blockname": "бл. Индже войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -1434,7 +1434,7 @@
       "type": "Feature",
       "properties": {
         "id": 37,
-        "blockname": "бл.Мануш войвода"
+        "blockname": "бл. Мануш войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -1469,7 +1469,7 @@
       "type": "Feature",
       "properties": {
         "id": 38,
-        "blockname": "бл.Румяна войвода"
+        "blockname": "бл. Румяна войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -1504,7 +1504,7 @@
       "type": "Feature",
       "properties": {
         "id": 39,
-        "blockname": "бл.Чавдар войвода"
+        "blockname": "бл. Чавдар войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -1539,7 +1539,7 @@
       "type": "Feature",
       "properties": {
         "id": 40,
-        "blockname": "бл.Бояна войвода"
+        "blockname": "бл. Бояна войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -1574,7 +1574,7 @@
       "type": "Feature",
       "properties": {
         "id": 41,
-        "blockname": "бл.Сирма войвода"
+        "blockname": "бл. Сирма войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -1609,7 +1609,7 @@
       "type": "Feature",
       "properties": {
         "id": 42,
-        "blockname": "бл.Райна Княгиня"
+        "blockname": "бл. Райна Княгиня"
       },
       "geometry": {
         "type": "Polygon",
@@ -1644,7 +1644,7 @@
       "type": "Feature",
       "properties": {
         "id": 43,
-        "blockname": "бл.Асен"
+        "blockname": "бл. Асен"
       },
       "geometry": {
         "type": "Polygon",
@@ -1679,7 +1679,7 @@
       "type": "Feature",
       "properties": {
         "id": 44,
-        "blockname": "бл.Балчо войвода"
+        "blockname": "бл. Балчо войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -1714,7 +1714,7 @@
       "type": "Feature",
       "properties": {
         "id": 45,
-        "blockname": "бл.Калоян"
+        "blockname": "бл. Калоян"
       },
       "geometry": {
         "type": "Polygon",
@@ -1749,7 +1749,7 @@
       "type": "Feature",
       "properties": {
         "id": 46,
-        "blockname": "бл.Петър"
+        "blockname": "бл. Петър"
       },
       "geometry": {
         "type": "Polygon",
@@ -1784,7 +1784,7 @@
       "type": "Feature",
       "properties": {
         "id": 47,
-        "blockname": "бл.Прага"
+        "blockname": "бл. Прага"
       },
       "geometry": {
         "type": "Polygon",
@@ -1819,7 +1819,7 @@
       "type": "Feature",
       "properties": {
         "id": 48,
-        "blockname": "бл.Москва"
+        "blockname": "бл. Москва"
       },
       "geometry": {
         "type": "Polygon",
@@ -1854,7 +1854,7 @@
       "type": "Feature",
       "properties": {
         "id": 49,
-        "blockname": "бл.Варшава"
+        "blockname": "бл. Варшава"
       },
       "geometry": {
         "type": "Polygon",
@@ -1889,7 +1889,7 @@
       "type": "Feature",
       "properties": {
         "id": 50,
-        "blockname": "бл.Ралица"
+        "blockname": "бл. Ралица"
       },
       "geometry": {
         "type": "Polygon",
@@ -1924,7 +1924,7 @@
       "type": "Feature",
       "properties": {
         "id": 51,
-        "blockname": "бл.Латинка"
+        "blockname": "бл. Латинка"
       },
       "geometry": {
         "type": "Polygon",
@@ -1994,7 +1994,7 @@
       "type": "Feature",
       "properties": {
         "id": 53,
-        "blockname": "бл.Иглика"
+        "blockname": "бл. Иглика"
       },
       "geometry": {
         "type": "Polygon",
@@ -2029,7 +2029,7 @@
       "type": "Feature",
       "properties": {
         "id": 54,
-        "blockname": "бл.Детелина"
+        "blockname": "бл. Детелина"
       },
       "geometry": {
         "type": "Polygon",
@@ -2064,7 +2064,7 @@
       "type": "Feature",
       "properties": {
         "id": 55,
-        "blockname": "бл.Нягол"
+        "blockname": "бл. Нягол"
       },
       "geometry": {
         "type": "Polygon",
@@ -2099,7 +2099,7 @@
       "type": "Feature",
       "properties": {
         "id": 56,
-        "blockname": "бл.Цена"
+        "blockname": "бл. Цена"
       },
       "geometry": {
         "type": "Polygon",
@@ -2134,7 +2134,7 @@
       "type": "Feature",
       "properties": {
         "id": 57,
-        "blockname": "бл.Лазар"
+        "blockname": "бл. Лазар"
       },
       "geometry": {
         "type": "Polygon",
@@ -2204,7 +2204,7 @@
       "type": "Feature",
       "properties": {
         "id": 59,
-        "blockname": "бл.Енергетик 1"
+        "blockname": "бл. Енергетик 1"
       },
       "geometry": {
         "type": "Polygon",
@@ -2247,7 +2247,7 @@
       "type": "Feature",
       "properties": {
         "id": 60,
-        "blockname": "бл.Енергетик 2"
+        "blockname": "бл. Енергетик 2"
       },
       "geometry": {
         "type": "Polygon",
@@ -2290,7 +2290,7 @@
       "type": "Feature",
       "properties": {
         "id": 65,
-        "blockname": "бл.Ильо войвода"
+        "blockname": "бл. Ильо войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -2325,7 +2325,7 @@
       "type": "Feature",
       "properties": {
         "id": 66,
-        "blockname": "бл.Ангел войвода"
+        "blockname": "бл. Ангел войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -2392,7 +2392,7 @@
       "type": "Feature",
       "properties": {
         "id": 67,
-        "blockname": "бл.Желю войвода"
+        "blockname": "бл. Желю войвода"
       },
       "geometry": {
         "type": "Polygon",
@@ -2459,7 +2459,7 @@
       "type": "Feature",
       "properties": {
         "id": 68,
-        "blockname": "бл.Будапеща"
+        "blockname": "бл. Будапеща"
       },
       "geometry": {
         "type": "Polygon",
@@ -2494,7 +2494,7 @@
       "type": "Feature",
       "properties": {
         "id": 69,
-        "blockname": "бл.Глинка"
+        "blockname": "бл. Глинка"
       },
       "geometry": {
         "type": "Polygon",
@@ -2529,7 +2529,7 @@
       "type": "Feature",
       "properties": {
         "id": 70,
-        "blockname": "бл.Камен"
+        "blockname": "бл. Камен"
       },
       "geometry": {
         "type": "Polygon",
@@ -2564,7 +2564,7 @@
       "type": "Feature",
       "properties": {
         "id": 74,
-        "blockname": "бл.Ния"
+        "blockname": "бл. Ния"
       },
       "geometry": {
         "type": "Polygon",
@@ -2599,7 +2599,7 @@
       "type": "Feature",
       "properties": {
         "id": 75,
-        "blockname": "бл.Мак"
+        "blockname": "бл. Мак"
       },
       "geometry": {
         "type": "Polygon",
