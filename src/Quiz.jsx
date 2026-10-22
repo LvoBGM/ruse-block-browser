@@ -1,7 +1,7 @@
 import './styles/Quiz.css';
 import { useState, useEffect } from 'react';
 import clickCorrectSound from './assets/click-correct.mp3';
-import clickIncorrectSound from './assets/click-correct.mp3'; // TODO: replace with incorrect sound
+import clickIncorrectSound from './assets/click-incorrect.mp3'; // TODO: replace with incorrect sound
 
 
 export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, blockData, onQuizComplete, setQuizProgress, setClickedBlocks }) {
