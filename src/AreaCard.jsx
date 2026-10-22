@@ -4,8 +4,10 @@ import './styles/AreaCard.css';
 export default function AreaCard({ id, name, options, setSelectedOptions }) {
     const [isExpanded, setIsExpanded] = useState(false);
     const [hasOptions, setHasOptions] = useState(options && options.length > 1);
+    const [isChecked, setIsChecked] = useState(true);
 
     function handleMainToggle(e) {
+        setIsChecked(e.target.checked);
         setSelectedOptions(prevOptions => ({
             ...prevOptions,
             [id]: e.target.checked
@@ -44,7 +46,7 @@ export default function AreaCard({ id, name, options, setSelectedOptions }) {
                     />
                     <span className="sidebar-toggle-slider"></span>
                 </label>
-                <div className={`label-content ${hasOptions ? 'clickable' : ''}`} onClick={hasOptions ? () => setIsExpanded(!isExpanded) : undefined}>
+                <div className={`label-content ${hasOptions ? 'clickable' : ''} ${!isChecked ? 'disabled' : ''}`} onClick={hasOptions ? () => setIsExpanded(!isExpanded) : undefined}>
                     <span className="sidebar-label-text">{name}</span>
 
                     {/* Expand/collapse symbol */}

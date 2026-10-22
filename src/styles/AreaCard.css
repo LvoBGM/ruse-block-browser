@@ -46,6 +46,10 @@
   flex: 1;
 }
 
+.label-content.disabled {
+  opacity: 0.4;
+}
+
 .label-content.clickable {
   cursor: pointer;
 }
