@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuizComplete.css';
+import './styles/QuizComplete.css';
 
 const QuizComplete = ({ isOpen, onClose, quizProgress }) => {
 	if (!isOpen) return null;

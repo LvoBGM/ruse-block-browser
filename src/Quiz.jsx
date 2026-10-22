@@ -1,4 +1,4 @@
-import './Quiz.css';
+import './styles/Quiz.css';
 import { useState, useEffect } from 'react';
 import clickCorrectSound from './assets/click-correct.mp3';
 import clickIncorrectSound from './assets/click-correct.mp3'; // TODO: replace with incorrect sound

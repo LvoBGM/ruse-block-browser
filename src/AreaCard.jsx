@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles/AreaCard.css';
 
 export default function AreaCard({ id, name, options, setSelectedOptions }) {
     const [isExpanded, setIsExpanded] = useState(false);

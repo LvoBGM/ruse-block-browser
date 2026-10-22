@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useMap } from 'react-leaflet';
 import L from 'leaflet';
-import './searchBar.css';
+import './styles/searchBar.css';
 
 export default function SearchBar({ blockData, layersRef}) {
     const [query, setQuery] = useState('');

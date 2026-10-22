@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './styles/App.css'
 import MapView from './MapView.jsx'
 
 function App() {
