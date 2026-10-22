@@ -4,7 +4,7 @@ import clickCorrectSound from './assets/click-correct.mp3';
 import clickIncorrectSound from './assets/click-correct.mp3'; // TODO: replace with incorrect sound
 
 
-export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, blockData, onQuizComplete, setQuizProgress }) {
+export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, blockData, onQuizComplete, setQuizProgress, setClickedBlocks }) {
     
     // Clean and randomize block data
     const cleanBlockData = shuffle(blockData.features.map(block => block.properties?.blockname));
@@ -19,9 +19,15 @@ export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, b
     useEffect(() => {
         if (clickedBlock) {
             const clickedBlockName = clickedBlock.blockname;
+
             if (clickedBlockName === targetBlock) {
                 console.log("block was correct");
+
+                // Add clicked block to the set
+                setClickedBlocks(prev => new Set(prev).add(clickedBlockName));
+
                 clickCorrectAudio.play();
+
                 if (targetBlockGuessedFirstTry) {
                     setTargetBlockGuessedFirstTry(true);
                     setQuizProgress(prev => ({
@@ -29,18 +35,22 @@ export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, b
                         correct: prev.correct + 1,
                     }));
                 }
+
                 handleNextBlock();
             } else {
                 console.log("block was incorrect");
+
                 clickIncorrectAudio.play();
+
                 setQuizProgress(prev => ({
                     ...prev,
                     incorrect: prev.incorrect + 1,
                 }));
+                
                 setTargetBlockGuessedFirstTry(false);
             }
         }
-    }, [clickedBlock]);
+    }, [clickedBlock, setClickedBlocks]);
 
     function handleNextBlock() {
         const nextBlock = blockQueue[1];

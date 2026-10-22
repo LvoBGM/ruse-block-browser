@@ -1,3 +1,2 @@
-3. Fix block gagarin being lighter that the other ones.
 5. Zdravez looks like it owns the other zdravez areas, because of how I draw the upside down triangle.
 6. When zooming in on parts of Ruse that arent done it shows like gray buildings with no names

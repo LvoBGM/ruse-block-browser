@@ -4,7 +4,7 @@ import L from 'leaflet';
 
 
 
-export default function MapBlocks({ blockData, layersRef, onBlockClick}){
+export default function MapBlocks({ blockData, layersRef, onBlockClick, clickedBlocks, isQuizActive }){
 
     const [zoomLevel, setZoomLevel] = useState(0);
     const [blockStyle, setBlockStyle] = useState({
@@ -16,6 +16,23 @@ export default function MapBlocks({ blockData, layersRef, onBlockClick}){
     });
     const map = useMap();
     const tooltipsRef = useRef({});
+
+    const getBlockStyle = (feature) => {
+        const blockName = feature.properties?.blockname;
+        const isClicked = isQuizActive && clickedBlocks?.has(blockName);
+
+        if (isClicked) {
+            return {
+                color: "#ffffff",
+                weight: 1,
+                opacity: 1,
+                fillColor: "#ffffff",
+                fillOpacity: 0.8
+            };
+        }
+
+        return blockStyle;
+    };
 
     useMapEvents({
         zoomend: () => {
@@ -76,7 +93,7 @@ export default function MapBlocks({ blockData, layersRef, onBlockClick}){
         {blockData && <GeoJSON
         key={blockData.features.length}
         data={blockData}
-        style={blockStyle}
+        style={getBlockStyle}
         onEachFeature={handleEachFeature}
         />}
     </>);

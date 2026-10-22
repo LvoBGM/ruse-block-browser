@@ -79,12 +79,15 @@ export default function MapView() {
         time: Date.now()
     });
 
+    const [clickedBlocks, setClickedBlocks] = useState(new Set());
+
     function handleCloseQuiz() {
         setIsQuizActive(false);
         setIsQuizMenuOpen(false);
         setRenderedBlockData(allBlockData);
         setClickedBlock(null);
         setIsQuizComplete(false);
+        setClickedBlocks(new Set());
     }
 
     function handleQuizComplete() {
@@ -119,7 +122,7 @@ export default function MapView() {
 
                 {!isQuizActive && <SearchBar blockData={renderedBlockData} layersRef={layersRef}/>}
 
-                <MapBlocks blockData={renderedBlockData} layersRef={layersRef} onBlockClick={handleBlockClick}/>
+                <MapBlocks blockData={renderedBlockData} layersRef={layersRef} onBlockClick={handleBlockClick} clickedBlocks={clickedBlocks} isQuizActive={isQuizActive}/>
             </MapContainer>
             {!isQuizMenuOpen && !isQuizActive && !isQuizComplete && (
                 <button
@@ -133,13 +136,14 @@ export default function MapView() {
             )}
 
             {isQuizActive && !isQuizComplete &&
-            <Quiz 
-                setIsQuizActive={setIsQuizActive} 
-                handleCloseQuiz={handleCloseQuiz} 
-                clickedBlock={clickedBlock} 
-                blockData={renderedBlockData} 
+            <Quiz
+                setIsQuizActive={setIsQuizActive}
+                handleCloseQuiz={handleCloseQuiz}
+                clickedBlock={clickedBlock}
+                blockData={renderedBlockData}
                 onQuizComplete={handleQuizComplete}
                 setQuizProgress={setQuizProgress}
+                setClickedBlocks={setClickedBlocks}
             />}
 
             {/* The Quiz Sidebar Menu */}
