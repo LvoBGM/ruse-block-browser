@@ -4,13 +4,14 @@ import clickCorrectSound from './assets/click-correct.mp3';
 import clickIncorrectSound from './assets/click-correct.mp3'; // TODO: replace with incorrect sound
 
 
-export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, blockData, onQuizComplete }) {
+export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, blockData, onQuizComplete, setQuizProgress }) {
     
     // Clean and randomize block data
     const cleanBlockData = shuffle(blockData.features.map(block => block.properties?.blockname));
 
     const [blockQueue, setBlockQueue] = useState(cleanBlockData);
     const [targetBlock, setTargetBlock] = useState(cleanBlockData[0]);
+    const [targetBlockGuessedFirstTry, setTargetBlockGuessedFirstTry] = useState(true);
 
     const clickCorrectAudio = new Audio(clickCorrectSound);
     const clickIncorrectAudio = new Audio(clickIncorrectSound);
@@ -21,19 +22,36 @@ export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, b
             if (clickedBlockName === targetBlock) {
                 console.log("block was correct");
                 clickCorrectAudio.play();
+                if (targetBlockGuessedFirstTry) {
+                    setTargetBlockGuessedFirstTry(true);
+                    setQuizProgress(prev => ({
+                        ...prev,
+                        correct: prev.correct + 1,
+                    }));
+                }
                 handleNextBlock();
             } else {
                 console.log("block was incorrect");
                 clickIncorrectAudio.play();
+                setQuizProgress(prev => ({
+                    ...prev,
+                    incorrect: prev.incorrect + 1,
+                }));
+                setTargetBlockGuessedFirstTry(false);
             }
         }
     }, [clickedBlock]);
 
     function handleNextBlock() {
         const nextBlock = blockQueue[1];
+        setTargetBlockGuessedFirstTry(true);
 
         if (nextBlock === undefined) {
             onQuizComplete();
+            setQuizProgress(prev => ({
+                ...prev,
+                time: Date.now() - prev.time
+            }));
             return;
         }
 

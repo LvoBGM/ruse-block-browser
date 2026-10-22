@@ -1,8 +1,13 @@
 import React from 'react';
 import './QuizComplete.css';
 
-const QuizComplete = ({ isOpen, onClose }) => {
+const QuizComplete = ({ isOpen, onClose, quizProgress }) => {
 	if (!isOpen) return null;
+
+	console.log(quizProgress);
+	const correct = quizProgress.correct;
+	const total = quizProgress.total;
+	const time = Math.floor(quizProgress.time / 1000);
 
   	return (
   	  <div className='quiz-complete'>
@@ -17,10 +22,10 @@ const QuizComplete = ({ isOpen, onClose }) => {
   		<hr className='quiz-divider' />
   		<div className='quiz-stats'>
     		<p className='stat-text'>
-      			You got <span className='highlight'>10/12</span> on the first time!
+				You got <span className='highlight'>{correct}/{total}</span> on the first try!
     		</p>
     		<p className='stat-text'>
-      			The quiz took you <span className='highlight'>25</span> seconds!
+      			The quiz took you <span className='highlight'>{time}</span> seconds!
     		</p>
   		</div>
   	</div>

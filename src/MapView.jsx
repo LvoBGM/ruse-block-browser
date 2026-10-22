@@ -64,11 +64,20 @@ const paddedRenderer = undefined; // L.canvas({ padding: 1.0 });
 export default function MapView() {
     // References to all layers (used by search bar to activate popups when searching for a block)
     const layersRef = useRef({});
+
     const [isQuizMenuOpen, setIsQuizMenuOpen] = useState(false);
     const [isQuizActive, setIsQuizActive] = useState(false);
     const [isQuizComplete, setIsQuizComplete] = useState(false);
+
     const [renderedBlockData, setRenderedBlockData] = useState(allBlockData);
     const [clickedBlock, setClickedBlock] = useState(null);
+
+    const [quizProgress, setQuizProgress] = useState({
+        correct: 0,
+        incorrect: 0,
+        total: 0, // This is the total amount of guesses the user made
+        time: Date.now()
+    });
 
     function handleCloseQuiz() {
         setIsQuizActive(false);
@@ -130,6 +139,7 @@ export default function MapView() {
                 clickedBlock={clickedBlock} 
                 blockData={renderedBlockData} 
                 onQuizComplete={handleQuizComplete}
+                setQuizProgress={setQuizProgress}
             />}
 
             {/* The Quiz Sidebar Menu */}
@@ -140,9 +150,10 @@ export default function MapView() {
                 setRenderedBlockData={setRenderedBlockData}
                 blockDataDictionary={blockDataDictionary}
                 clearClickedBlock={clearClickedBlock}
+                setQuizProgress={setQuizProgress}
             />
             {/* The Quiz Complete Menu */}
-            {isQuizComplete && <QuizComplete isOpen={isQuizComplete} onClose={handleCloseQuiz} />}
+            {isQuizComplete && <QuizComplete isOpen={isQuizComplete} onClose={handleCloseQuiz} quizProgress={quizProgress} />}
         </>
     );
 }
