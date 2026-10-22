@@ -79,7 +79,7 @@ export default function MapView() {
         time: Date.now()
     });
 
-    const [clickedBlocks, setClickedBlocks] = useState(new Set());
+    const [clickedBlocks, setClickedBlocks] = useState({});
 
     function handleCloseQuiz() {
         setIsQuizActive(false);
@@ -87,7 +87,7 @@ export default function MapView() {
         setRenderedBlockData(allBlockData);
         setClickedBlock(null);
         setIsQuizComplete(false);
-        setClickedBlocks(new Set());
+        setClickedBlocks({});
     }
 
     function handleQuizComplete() {

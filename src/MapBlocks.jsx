@@ -19,14 +19,24 @@ export default function MapBlocks({ blockData, layersRef, onBlockClick, clickedB
 
     const getBlockStyle = (feature) => {
         const blockName = feature.properties?.blockname;
-        const isClicked = isQuizActive && clickedBlocks?.has(blockName);
+        const blockStatus = isQuizActive ? clickedBlocks?.[blockName] : undefined;
 
-        if (isClicked) {
+        if (blockStatus === true) {
+            // Guessed correctly on first try - white
             return {
                 color: "#ffffff",
                 weight: 1,
                 opacity: 1,
                 fillColor: "#ffffff",
+                fillOpacity: 0.8
+            };
+        } else if (blockStatus === false) {
+            // Not guessed correctly on first try - red
+            return {
+                color: "#c92323",
+                weight: 1,
+                opacity: 1,
+                fillColor: "#c92323",
                 fillOpacity: 0.8
             };
         }

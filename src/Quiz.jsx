@@ -23,8 +23,11 @@ export default function Quiz({ setIsQuizActive, handleCloseQuiz, clickedBlock, b
             if (clickedBlockName === targetBlock) {
                 console.log("block was correct");
 
-                // Add clicked block to the set
-                setClickedBlocks(prev => new Set(prev).add(clickedBlockName));
+                // Mark block as guessed correctly on first try
+                setClickedBlocks(prev => ({
+                    ...prev,
+                    [clickedBlockName]: targetBlockGuessedFirstTry
+                }));
 
                 clickCorrectAudio.play();
 
