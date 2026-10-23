@@ -2,10 +2,13 @@ import { useState } from 'react';
 import { useMap } from 'react-leaflet';
 import L from 'leaflet';
 import './styles/searchBar.css';
+import SearchResultInfo from './SearchResultInfo.jsx';
 
 export default function SearchBar({ blockData, layersRef}) {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
+    const [selectedFeature, setSelectedFeature] = useState(null);
+    const [popupPosition, setPopupPosition] = useState(null);
 
     const map = useMap();
 
@@ -28,13 +31,20 @@ export default function SearchBar({ blockData, layersRef}) {
     };
 
     function onResultClick(feature) {
-
+        // Close any existing popup
+        handleClosePopup();
+        
         // Once panning animation has finished, put a popup on the block
         map.once('moveend', () => {
-            const targetLayer = layersRef.current[feature["id"]];
-            if (targetLayer) {
-                targetLayer.openPopup();
-            }
+            const target = feature.geometry.coordinates[0][0];
+            const targetCoords = [target[1], target[0]];
+            const latLng = L.latLng(targetCoords);
+ 
+            // Convert map coordinates to screen pixel coordinates
+            const point = map.latLngToContainerPoint(latLng);
+ 
+            setSelectedFeature(feature);
+            setPopupPosition({ x: point.x, y: point.y });
         });
 
         // Coordinates in features are stored reversed
@@ -52,7 +62,13 @@ export default function SearchBar({ blockData, layersRef}) {
 
     }
 
+    function handleClosePopup() {
+        setSelectedFeature(null);
+        setPopupPosition(null);
+    }
+
     return (
+        <>
         <div className="search-container">
             <input
                 type="text"
@@ -88,5 +104,14 @@ export default function SearchBar({ blockData, layersRef}) {
                 </ul>
             )}
         </div>
+        {selectedFeature && popupPosition && (
+                <SearchResultInfo
+                    feature={selectedFeature}
+                    position={popupPosition}
+                    handleClosePopup={handleClosePopup}
+                />
+        )}
+        </>
+        
     );
 }
